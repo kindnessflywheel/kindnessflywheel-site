@@ -1,0 +1,7 @@
+main:
+  - title: "About"
+    url: /about/
+  - title: "Posts by Lens"
+    url: /tags/
+  - title: "Contribute"
+    url: https://github.com/kindnessflywheel/kindnessflywheel-site/blob/main/CONTRIBUTOR_GUIDE.md

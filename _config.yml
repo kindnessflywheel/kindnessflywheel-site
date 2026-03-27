@@ -1,0 +1,92 @@
+# Site settings
+title: "The Kindness Flywheel"
+subtitle: "Human-centered leadership in the age of AI"
+description: >-
+  Open-source ideas about what makes businesses defensible when AI
+  commoditizes everything else. Stories from the field. Built with care.
+url: "https://kindnessflywheel.github.io"
+baseurl: "/kindnessflywheel-site"
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default"
+
+# Build
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+# Author (default)
+author:
+  name: "Geoff Scott"
+  bio: "CTO at OneEleven. Executive coach at Growth Science. Building with care."
+  location: "Hudson Valley, NY"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/geoffscott"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/geoffscott"
+
+# Site author (sidebar)
+author_profile: true
+
+# Reading
+words_per_minute: 200
+
+# Collections
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+      show_date: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+  - scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
+      author_profile: true
+
+# Pagination
+paginate: 6
+paginate_path: /page:num/
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kindnessflywheel/kindnessflywheel-site"
+
+# Analytics (add later)
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: ""
