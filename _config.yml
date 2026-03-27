@@ -24,19 +24,6 @@ plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
 
-# Author (site-wide default for sidebar)
-author:
-  name: "Geoff Scott"
-  bio: "CTO at OneEleven. Executive coach at Growth Science. Building with care."
-  location: "Hudson Valley, NY"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/geoffscott"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/geoffscott"
-
 # Reading
 words_per_minute: 200
 
