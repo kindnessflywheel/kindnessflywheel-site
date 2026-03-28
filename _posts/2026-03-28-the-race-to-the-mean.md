@@ -34,13 +34,15 @@ And it works. For some companies, for some period of time, extraction produces r
 
 But Meta is an outlier. The Magnificent Seven — Apple, Nvidia, Microsoft, Amazon, Alphabet, Meta, Tesla — represent 33% of the S&P 500, up from 12.5% a decade ago. The top 10 companies account for 42% of the index, surpassing the dot-com peak. These are companies with monopoly-scale network effects, regulatory moats, and hundred-billion-dollar cash reserves.
 
-The other 490 companies in the S&P 500, and the tens of thousands of companies beyond it, live in a completely different reality. They don't have monopoly advantages. When AI-enabled competitors show up offering identical capabilities — and they will, in months, not years — the extractive playbook runs out of runway.
+Monopolies aren't invincible — they've fallen before and will again, to structural shifts, regulatory action, or their own cultural decay. But they don't fall to a couple of founders with access to computing resources and plenty of caffeine. That's not a practical threat to them.
+
+It is, however, a very practical threat to everyone else. The other 490 companies in the S&P 500, and the tens of thousands of companies beyond it, live in a completely different reality. They don't have monopoly advantages. When AI-enabled competitors show up offering identical capabilities — and they will, in months, not years — the extractive playbook runs out of runway.
 
 ## What the Data Actually Says
 
-Here's what's emerging from the research, and it's directionally consistent across every major survey from the last two years:
+**Technical convergence is accelerating.** The Stanford AI Index, Menlo Ventures, and Artificial Analysis all document the same pattern: model capability is converging rapidly, costs are collapsing, and first-mover advantage from a new model version lasts roughly six to eight weeks before competitors match it. At the model layer, the race to the mean is effectively over.
 
-**AI is commoditizing technical capability.** 95% of enterprise AI initiatives produce no measurable P&L impact — not because AI doesn't work, but because the technical layer alone isn't where value lives. 42% of companies abandoned most of their AI projects in 2025, up from 17% the year before. The organizations that succeed with AI aren't the ones with the best models. They're the ones where people work well together.
+**But most companies can't convert AI into results.** 95% of enterprise AI initiatives produce no measurable P&L impact. 42% of companies abandoned most of their AI projects in 2025, up from 17% the year before. The problem isn't the technology — it's the organizational layer. The companies that succeed with AI aren't the ones with the best models. They're the ones where people work well together.
 
 **Human skills are ascending.** The World Economic Forum's 2025 report found that the top five skills employers value are all human-centered: analytical thinking, resilience, leadership, creative thinking, and self-awareness. Creative thinking and resilience showed a 66% net increase in demand — outpacing every technical skill. An analysis of 70 million job transitions found that social skills are the single strongest predictor of professional attainment. Managerial job postings emphasizing collaboration have tripled since 2007.
 
@@ -48,7 +50,7 @@ Here's what's emerging from the research, and it's directionally consistent acro
 
 **Non-extractive models outperform in knowledge work.** A rigorous study of 2,500 firms found that worker cooperatives in knowledge-intensive industries outperformed conventional counterparts by 9% on productivity — while simultaneously reducing wage inequality. High-wage workers in democratic firms were 25% less likely to leave, suggesting that voice, autonomy, and purpose compensate for some wage compression. Investment in employee ownership funds jumped 73% in 2025. And the most visible natural experiment: when Microsoft dropped stack ranking in 2013 and moved to collaborative performance evaluation, its stock went from $37 to $460 under Satya Nadella.
 
-None of this means extraction never works. In routine industries with standardized tasks, the data is neutral. And for monopolies with overwhelming structural advantages, extraction can produce results indefinitely — they have the market power to absorb the human cost.
+None of this means extraction never works. In routine industries with standardized tasks, the data is neutral. And for monopolies with overwhelming structural advantages, extraction can produce impressive results for a long time — they have the market power to absorb the human cost.
 
 But for the vast majority of companies competing in knowledge-intensive markets where AI is leveling technical capability — which is most of the economy that matters — the evidence points one direction.
 
@@ -75,7 +77,7 @@ The word the data uses is trust. The thing that produces trust is care. And care
 
 I don't want to oversell this. Here's what I'd say to any leader sitting with their strategy deck:
 
-Extraction works. For a while. For some companies. If you're a monopoly with structural advantages that insulate you from competitive pressure, you can extract indefinitely and post record profits.
+Extraction works. For a while. For some companies. If you're a monopoly with structural advantages that insulate you from competitive pressure, you can sustain it longer than most — though history suggests not forever.
 
 If you're everyone else — and you almost certainly are — the AI era changes the calculus. When any competitor can match your technical capabilities in months, and your marketing is optimized by the same models as theirs, and your engineering team ships at similar speed, what's left is whether people trust you. Your employees, your customers, your partners.
 
@@ -89,4 +91,4 @@ If you're seeing this in your own work — or if you think we're wrong — [we'd
 
 ---
 
-*Sources: Stanford AI Index 2025, McKinsey State of AI 2025, BCG AI at Work 2025 (n=10,600), WEF Future of Jobs 2025, Gallup State of the Global Workplace 2024-2025, Eagle Hill Consulting Workforce Burnout Survey 2024 (n=1,247), Deloitte Global Human Capital Trends 2024 (n=14,000), UKG Frontline Study 2025 (n=8,200), HBR "Soft Skills Matter Now More Than Ever" 2025, Young-Hyman et al. Organization Science 2023, ALM Mental Health Survey 2025, Menlo Ventures State of Generative AI 2025, Pew Research 2025.*
+*Sources: Stanford AI Index 2025, McKinsey State of AI 2025, MIT "The GenAI Divide" 2025, BCG AI at Work 2025 (n=10,600), WEF Future of Jobs 2025, Gallup State of the Global Workplace 2024-2025, Eagle Hill Consulting Workforce Burnout Survey 2024 (n=1,247), Deloitte Global Human Capital Trends 2024 (n=14,000), UKG Frontline Study 2025 (n=8,200), HBR "Soft Skills Matter Now More Than Ever" 2025, Young-Hyman et al. Organization Science 2023, ALM Mental Health Survey 2025, Menlo Ventures State of Generative AI 2025, Artificial Analysis Year-End 2025, Pew Research 2025.*
