@@ -5,14 +5,14 @@ date: 2026-03-28
 tags:
   - TheRealMoat
 excerpt: >
-  Everyone's talking about what AI replaces. Nobody's talking about what it
-  can't. We think kindness might be the answer — and we're building a
-  community to find out.
+  Something isn't adding up. Teams are shipping faster, products are better,
+  and the metrics look good. But the moat feels thinner every quarter. Here's
+  why — and what might replace it.
 ---
 
-Everyone's talking about what AI replaces. Nobody's talking about what it can't.
+Something isn't adding up. Your team is shipping faster than ever. Your product is better than it's ever been. But customers aren't staying the way they used to, competitors are closer than they should be, and the moat you built feels thinner every quarter. If you're a founder, investors are hesitant to commit capital — and the reason, even if nobody's saying it directly, is that they can see your traditional moat has disappeared.
 
-I've spent the last year watching this play out from multiple seats — as CTO of a financial wellness company, as an executive coach working with founders and leaders, and as someone building with AI agents every day. What I keep seeing is the same pattern: the technical layer is converging fast, and the people who are winning aren't winning because of their technology. They're winning because people trust them.
+I've spent the last year watching this from multiple seats — as CTO of a financial wellness company, as an executive coach working with founders and leaders, and as someone building with AI agents every day. The pattern is the same everywhere: the technical layer is converging fast, and the people who are winning aren't winning because of their technology. They're winning because people trust them.
 
 This publication exists to explore a question: **What happens when we stop extracting from people and start investing in their flourishing?**
 
