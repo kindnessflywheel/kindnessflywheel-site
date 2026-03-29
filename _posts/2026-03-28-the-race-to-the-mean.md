@@ -20,7 +20,7 @@ I think the answer changes everything about how we compete, how we lead, and how
 
 ## Something Broke
 
-The gap between the best AI models in the world shrank from a 17.5 percentage point lead to 0.3 in a single year. Open-source models closed an 8% gap to 1.7%. GPT-4 level capability is 100x cheaper than when it launched. Feature-level replication takes hours to days.
+Between 2023 and 2024, the gap between the best AI models in the United States and China shrank from a 17.5 percentage point lead to 0.3. In that same period, open-source models closed an 8% gap with proprietary models to 1.7%. By early 2025, GPT-4 level capability was 100x cheaper than when it launched in March 2023. Feature-level replication now takes hours to days.
 
 That's the AI model layer — but it's just where convergence is most visible. The same dynamic is hitting every business built on knowledge, information, and expertise. Management consulting: McKinsey announced its first significant headcount reduction after a decade of growth. Accounting: KPMG forced a 14% fee cut from its own auditor, citing AI-driven savings — then inadvertently showed every client how to demand the same from them. Legal: Goldman Sachs estimates 40% of legal tasks can be automated, and a new firm called Pierson Ferdinand launched explicitly as a "junior-free" model. Media: writing jobs on Upwork dropped 32% in a year.
 
