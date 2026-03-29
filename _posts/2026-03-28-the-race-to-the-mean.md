@@ -16,7 +16,7 @@ I've spent the last year watching this from multiple seats — as CTO of a finan
 
 This publication exists to explore a question: **What happens when we stop extracting from people and start investing in their flourishing?**
 
-I think the answer changes everything about how we compete, how we lead, and how we build. But I'm not sure yet. That's why this is a community, not a manifesto.
+I think the answer changes everything about how we compete, how we lead, and how we build.
 
 ## Something Broke
 
