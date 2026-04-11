@@ -32,7 +32,7 @@ Most organizations run on an operating philosophy nobody names out loud: **extra
 
 We call employees "resources" and track their "utilization." We build forced ranking systems where someone has to lose for someone else to win. We operate under the assumption that boards must maximize shareholder value — an assumption legal scholars have shown is a norm, not a law. Delaware doesn't require it. But we act as if it does, because the extractive logic is so embedded that questioning it feels naive.
 
-The results are measurable. 45% of U.S. workers report burnout — not a spike, a flat line. Employee engagement hit an 11-year low in 2024; Gallup calls it "The Great Detachment." Only 16% of employees express high trust in their employers. In January 2025, Meta cut 5% of its workforce targeting "lowest performers" and Microsoft reintroduced terminations without improvement plans. The extractive playbook is tightening, not loosening.
+The results are measurable. 45% of U.S. workers report burnout — not a spike, a flat line. Employee engagement hit an 11-year low in 2024; Gallup calls it "The Great Detachment." Only 16% of employees express high trust in their employers.
 
 And it works — for some companies, for some period of time. Meta posted record profits. But Meta is an outlier. The Magnificent Seven represent 33% of the S&P 500, up from 12.5% a decade ago. These companies have monopoly-scale network effects, regulatory moats, and hundred-billion-dollar cash reserves. They're not invincible — monopolies have fallen before and will again — but they don't fall to a couple of founders with computing resources and caffeine. That's not a practical threat to them.
 
@@ -42,11 +42,9 @@ It is a very practical threat to everyone else.
 
 Here's what's emerging, and it's directionally consistent across every major survey from the last two years:
 
-**95% of enterprise AI initiatives produce no measurable P&L impact.** 42% of companies abandoned most AI projects in 2025, up from 17% the year before. MIT attributed the failures to workflow misalignment, skills gaps, and cultural barriers — not the technology itself.
-
 **The skills that matter are shifting.** The World Economic Forum's 2025 report found that the top five skills employers value are all human-centered: analytical thinking, resilience, leadership, creative thinking, and self-awareness. Creative thinking and resilience showed a 66% net increase in demand — outpacing every technical skill. An analysis of 70 million job transitions found that social skills are the single strongest predictor of professional attainment.
 
-**Trust is the multiplier.** BCG surveyed over 10,000 people and found that strong leadership support raises employee positivity about AI from 15% to 55% — a 3.7x increase and the single most powerful lever in AI adoption. Workers who use AI in environments of trust and psychological safety burn out 24% less than those who don't.
+**Trust is the multiplier — especially for AI adoption.** BCG surveyed over 10,000 people and found that strong leadership support raises employee positivity about AI from 15% to 55% — a 3.7x increase and the single most powerful lever in AI adoption. Workers who use AI in environments of trust and psychological safety burn out 24% less than those who don't. This matters because 95% of enterprise AI initiatives produce no measurable P&L impact, and MIT attributed the failures not to the technology but to workflow misalignment, skills gaps, and cultural barriers. The companies failing at AI aren't failing because the tools don't work. They're failing because their cultures can't absorb the change.
 
 **People-centered models outperform in knowledge work.** Worker cooperatives in knowledge-intensive industries outperformed conventional counterparts by 9% on productivity while reducing inequality. When Microsoft dropped stack ranking in 2013, its stock went from $37 to $460 under Nadella — though that's suggestive, not causal, since Azure, Office 365, and the OpenAI investment played major roles.
 
