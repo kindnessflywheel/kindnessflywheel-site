@@ -5,9 +5,9 @@ permalink: /authors/geoff-scott/
 author_profile: true
 ---
 
-I'm the CTO at [OneEleven](https://oneeleven.com), a financial wellness company where we're building technology that helps people improve their relationship with money — and learning what it means to lead a team with genuine care.
+I'm the CTO at [OneEleven](https://oneeleven.co), a financial wellness company where we're building technology that helps people improve their relationship with money — and learning what it means to lead a team with genuine care.
 
-I run [Growth Science](https://growthscience.io), an executive coaching and advisory practice built on a simple thesis: when leaders lead with kindness, everything downstream gets better. Revenue, retention, culture, customer loyalty. Not because kindness is nice — because it's the mechanism.
+I run [Growth Science](https://growthscience.co), an executive coaching and advisory practice built on a simple thesis: when leaders lead with kindness, everything downstream gets better. Revenue, retention, culture, customer loyalty. Not because kindness is nice — because it's the mechanism.
 
 I serve on the boards of [Saranam](https://saranam.org), a spiritual community and 501(c)(3), and [SIMNY](https://simny.org), a technology executive membership association.
 

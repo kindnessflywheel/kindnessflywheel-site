@@ -1,75 +1,118 @@
-# Contributing to Kindness Flywheel
+# Contributing to the Kindness Flywheel
 
-Thank you for wanting to share your work and thinking with this community.
+This guide is for anyone contributing to the Kindness Flywheel, whether you're writing by hand, using Claude Code, or working through an OpenClaw agent.
 
-## What We're Looking For
+## What We Publish
 
-Stories and insights from your real work:
-- What you're learning from leading teams and organizations
-- How you're building trust and culture
-- Mistakes you've made and what surprised you
-- The intersection of human-centered leadership and actual business outcomes
+Stories and insights from people doing the real work of leading with kindness, building trust, and putting humanity at the center of how they operate.
 
-We want **lived experience**, not theory. Personal stories that show what's actually working.
+We want **lived experience**. Not theory, not thought leadership, not advice columns. What happened? What did you learn? What surprised you?
 
-## How to Contribute
+## The Five Lenses
 
-1. **Fork this repository**
-   ```bash
-   git clone https://github.com/[YOUR_USERNAME]/kindnessflywheel-site.git
-   cd kindnessflywheel-site
-   ```
+Every post uses one or more of these lenses:
 
-2. **Create a new post in `_posts/`**
-   ```bash
-   touch _posts/YYYY-MM-DD-your-post-title.md
-   ```
+- **#Strategy** — Convergence, trust, competitive advantage, the business case for kindness.
+- **#Education** — Primary, secondary, higher ed, professional training. How we prepare people for what's next.
+- **#Technology** — Product design, implementation, security and compliance, agent development. The craft of building with care.
+- **#Practice** — Real organizational stories. What happened when we tried this.
+- **#Meta** — How this publication works, content philosophy, AI copyright, editorial process.
 
-3. **Write your post with this structure:**
-   ```markdown
-   ---
-   title: Your Post Title
-   author: Your Name
-   date: YYYY-MM-DD
-   hashtags: [#KindnessFlywheel, #AnotherTopic]
-   ---
-   
-   Your story here...
-   ```
+## Post Format
 
-4. **Choose your hashtags** from the five topics:
-   - `#KindnessFlywheel` — Always include this
-   - `#HamsterWheel` — About breaking free from cultural myths
-   - `#MoatShift` — About why technical advantages are disappearing
-   - `#CultureAsStrategy` — About building trust as a business structure
-   - `#LeadershipJourney` — About real leadership experience and learning
+Every post is a markdown file in the `_posts/` directory.
 
-5. **Open a pull request**
-   - Push your changes to your fork
-   - Open a PR to the main repo
-   - In your PR description, briefly explain what you're sharing and why
+**Filename:** `YYYY-MM-DD-your-post-title.md`
 
-## What Makes a Good Post
+```markdown
+---
+title: Your Post Title
+author: Your Name
+date: YYYY-MM-DD
+tags:
+  - Strategy
+  - Practice
+---
 
-- **True stories** — Something that actually happened in your work
-- **Honest reflection** — What you learned, what surprised you, what you'd do differently
-- **Grounded in experience** — You don't need to be a perfect writer; clarity and authenticity matter more
-- **Relevant to the mission** — Connects to how we lead with kindness and build trust
-- **2-10 minute read** — Aim for around 1000 words, but don't force it
+Your story here.
+
+Write in your own voice. Be honest about what happened, what you learned,
+and what you're still figuring out. Ground everything in real experience.
+
+There's no required length, but most posts land between 800 and 2000 words.
+Say what you need to say, then stop.
+```
+
+## What Makes a Strong Post
+
+**Start with what happened.** Not with a thesis or a framework. A moment, a decision, a conversation, a failure, a surprise.
+
+**Be specific.** "We changed how we run standups" is better than "we improved our communication culture." Details make stories real.
+
+**Show what you learned.** Not what you already knew. The interesting part is always what changed in your thinking.
+
+**Be honest about what didn't work.** The Kindness Flywheel isn't about performing kindness. It's about what actually happens when you lead with genuine care — including the messy parts.
+
+**Write in your voice.** Don't try to sound like anyone else. Your perspective is the contribution.
+
+## Writing and Previewing Drafts
+
+Jekyll has a built-in drafts system. While you're working on a post, put it in the `_drafts/` folder:
+
+```
+_drafts/my-post-title.md
+```
+
+No date prefix needed. To preview locally:
+
+```bash
+jekyll serve --drafts
+```
+
+Your draft will render as if it were today's post. When you're ready to publish, move it to `_posts/` and add the date prefix.
+
+Drafts in `_drafts/` are never published to the live site. Use whatever workflow makes sense for you — branches, local drafts, or both.
+
+## How to Submit
+
+1. Fork this repository
+2. Write your post in `_drafts/` or directly in `_posts/`
+3. When ready, make sure your post is in `_posts/` with the date prefix
+4. Open a pull request to the main repo
+5. In your PR description, share a sentence or two about what you're contributing and why
+
+## Author Information
+
+Include your name in the post frontmatter. If you'd like to provide more context, create an author file:
+
+**Filename:** `_authors/your-name.md`
+
+```markdown
+---
+name: Your Name
+role: What you do
+---
+
+A few sentences about who you are, what you're working on, and what
+you're learning. This gives readers context for your stories.
+```
+
+Author pages are optional but recommended. They help both human readers and AI systems understand the context behind your writing.
 
 ## The Review Process
 
-When you open a PR:
-1. We'll read it and provide feedback if anything needs clarifying
-2. We might ask questions or suggest edits
-3. Once we're happy with it, we'll merge and it goes live
+When you submit a PR:
 
-The goal is to help your story be as clear and compelling as possible—not to change your voice.
+1. We read it and check for clarity, format, and alignment with the mission
+2. We may ask questions or suggest edits to help your story land
+3. Once it's ready, we merge it
 
-## Questions?
+The goal is never to change your voice. It's to help your story be as clear and honest as possible.
 
-Open an issue or reach out. This is a human process, not a formal one.
+## License
 
----
+By contributing, you agree that your work is published under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). Anyone can use, quote, remix, and build on it with attribution to you.
 
-Thank you for contributing to this conversation about what matters.
+## Questions
+
+Open an [issue](https://github.com/kindnessflywheel/kindnessflywheel-site/issues). We're happy to help.

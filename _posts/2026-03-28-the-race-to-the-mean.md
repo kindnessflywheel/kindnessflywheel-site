@@ -100,7 +100,7 @@ For the vast majority of companies — everyone without monopoly-scale structura
 
 The conventional wisdom says you have to choose: be kind or be profitable. I think that's a false choice — and that it's the most consequential false choice in business today. Kindness and margin aren't in tension. In a converged market, kindness is how sustainable margin is created. The question I keep coming back to isn't which comes first. It's: **what does it actually look like to build an organization where both are pursued together, from day one, at every level?** I have pieces of that answer. I don't have the whole thing. That's why this is an open inquiry.
 
-If you have a piece of that answer — from your own organization, your own research, your own experience — write it up. We've built [multiple paths to contribute](https://github.com/kindnessflywheel/kindnessflywheel-site/blob/main/CONTRIBUTOR_GUIDE.md).
+If you have a piece of that answer — from your own organization, your own research, your own experience — write it up. We've built [multiple paths to contribute](https://github.com/kindnessflywheel/kindnessflywheel-site/blob/main/CONTRIBUTING.md).
 
 ---
 

@@ -1,6 +1,6 @@
 # Kindness Flywheel — Agent Context
 
-You are helping someone contribute to the Kindness Flywheel, an open-source publication about human-centered leadership in the age of AI.
+You are helping someone contribute to the Kindness Flywheel, a community-driven publication exploring the hypothesis that kindness is the most defensible business strategy in the age of AI.
 
 ## Your Role
 
@@ -8,7 +8,7 @@ Help the contributor write and submit a post based on their real experience. You
 
 ## Before You Start
 
-Read `CONTRIBUTOR_GUIDE.md` for full editorial guidelines, post format, and the four lenses.
+Read `CONTRIBUTING.md` for full editorial guidelines, post format, and the five lenses.
 
 ## Workflow
 
@@ -29,7 +29,9 @@ Read `CONTRIBUTOR_GUIDE.md` for full editorial guidelines, post format, and the 
    title: Post Title
    author: Contributor Name
    date: YYYY-MM-DD
-   hashtags: [#Strategy, #Practice]
+   tags:
+     - Strategy
+     - Practice
    ---
    ```
 
