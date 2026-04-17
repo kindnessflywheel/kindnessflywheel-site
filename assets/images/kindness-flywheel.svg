@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" font-family="Georgia, serif">
+  <!-- Arrows (drawn first so they go behind nodes) -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Circular arrow paths -->
+  <!-- Leadership → Employees (top to right) -->
+  <path d="M 390 120 Q 480 140 490 220" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Employees → Customers (right to bottom-right) -->
+  <path d="M 490 280 Q 480 360 410 400" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Customers → Loyalty (bottom-right to bottom-left) -->
+  <path d="M 310 420 Q 300 430 200 400" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Loyalty → Margin (bottom-left to left) -->
+  <path d="M 120 370 Q 90 320 100 260" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Margin → Leadership (left to top) -->
+  <path d="M 120 200 Q 130 140 210 110" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Node: Leadership (top center) -->
+  <rect x="210" y="80" width="180" height="60" rx="12" fill="#e8f4f8" stroke="#2980b9" stroke-width="2"/>
+  <text x="300" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">Leadership</text>
+  <text x="300" y="125" text-anchor="middle" font-size="12" fill="#555">Genuine Care</text>
+
+  <!-- Node: Employees (right) -->
+  <rect x="400" y="210" width="180" height="60" rx="12" fill="#e8f8e8" stroke="#27ae60" stroke-width="2"/>
+  <text x="490" y="235" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">Employees</text>
+  <text x="490" y="255" text-anchor="middle" font-size="12" fill="#555">Trust &amp; Belonging</text>
+
+  <!-- Node: Customers (bottom right) -->
+  <rect x="320" y="370" width="180" height="60" rx="12" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+  <text x="410" y="395" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">Customers</text>
+  <text x="410" y="415" text-anchor="middle" font-size="12" fill="#555">Authentic Care</text>
+
+  <!-- Node: Loyalty (bottom left) -->
+  <rect x="100" y="370" width="180" height="60" rx="12" fill="#fde8d0" stroke="#e67e22" stroke-width="2"/>
+  <text x="190" y="395" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">Loyalty &amp; Advocacy</text>
+  <text x="190" y="415" text-anchor="middle" font-size="12" fill="#555">Customers Stay</text>
+
+  <!-- Node: Margin (left) -->
+  <rect x="20" y="210" width="180" height="60" rx="12" fill="#f9ebea" stroke="#e74c3c" stroke-width="2"/>
+  <text x="110" y="235" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">Sustainable Margin</text>
+  <text x="110" y="255" text-anchor="middle" font-size="12" fill="#555">Reinvest in People</text>
+
+  <!-- Center label -->
+  <text x="300" y="270" text-anchor="middle" font-size="11" fill="#888" font-style="italic">The flywheel turns when</text>
+  <text x="300" y="286" text-anchor="middle" font-size="11" fill="#888" font-style="italic">each link is genuine</text>
+
+  <!-- External pressure labels -->
+  <text x="300" y="30" text-anchor="middle" font-size="10" fill="#999">↑ Shareholder pressure (short-term returns)</text>
+  <text x="300" y="480" text-anchor="middle" font-size="10" fill="#999">↓ Consumer pressure (cheapest, fastest)</text>
+</svg>

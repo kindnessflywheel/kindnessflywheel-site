@@ -78,8 +78,3 @@ search: true
 search_full_content: true
 search_provider: lunr
 
-
-# Mermaid diagram support
-after_footer_scripts:
-  - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
-  - /kindnessflywheel-site/assets/js/mermaid-init.js

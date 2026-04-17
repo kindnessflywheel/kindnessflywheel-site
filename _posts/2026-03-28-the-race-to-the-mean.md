@@ -48,20 +48,7 @@ The word the research uses is trust. The thing that produces trust is care. And 
 
 Here's how the flywheel works:
 
-```mermaid
-graph LR
-    A["🔵 Leadership<br/>Genuine Care"] --> B["🟢 Employees<br/>Trust & Belonging"]
-    B --> C["🟡 Customers<br/>Authentic Care"]
-    C --> D["🟠 Loyalty &<br/>Advocacy"]
-    D --> E["🔴 Sustainable<br/>Margin"]
-    E --> A
-
-    style A fill:#e8f4f8,stroke:#2980b9,stroke-width:2px
-    style B fill:#e8f8e8,stroke:#27ae60,stroke-width:2px
-    style C fill:#fef9e7,stroke:#f39c12,stroke-width:2px
-    style D fill:#fde8d0,stroke:#e67e22,stroke-width:2px
-    style E fill:#f9ebea,stroke:#e74c3c,stroke-width:2px
-```
+![The Kindness Flywheel — Leadership genuine care flows to employee trust and belonging, which flows to authentic customer care, which creates loyalty and advocacy, which generates sustainable margin, which gets reinvested in people.]({{ "/assets/images/kindness-flywheel.svg" | relative_url }})
 
 The flywheel turns when each link is genuine. Leadership invests in people. People who feel trusted and valued bring that care to customers — not because they're trained to, but because it's real. Customers feel the difference and stay. Loyalty creates sustainable margin. And that margin gets reinvested in people, not extracted from them.
 
