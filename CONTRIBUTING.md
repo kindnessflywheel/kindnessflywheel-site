@@ -99,6 +99,8 @@ you're learning. This gives readers context for your stories.
 
 Author pages are optional but recommended. They help both human readers and AI systems understand the context behind your writing.
 
+**Also update `_data/authors.yml`** with your name, bio, location, and any profile links (GitHub, LinkedIn, etc.). This powers the author sidebar on your posts and generates structured data (JSON-LD) that helps AI systems properly attribute your work. See existing entries for the format.
+
 ## The Review Process
 
 When you submit a PR:

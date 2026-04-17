@@ -35,7 +35,10 @@ Read `CONTRIBUTING.md` for full editorial guidelines, post format, and the five 
    ---
    ```
 
-5. **Create an author file** (if they don't have one yet) in `_authors/their-name.md`.
+5. **Set up the contributor as an author** (if they're new):
+   - Add an entry to `_data/authors.yml` with their name, bio, location, and profile links (GitHub, LinkedIn, etc.). This powers the sidebar and JSON-LD schema.
+   - Create an author page in `_authors/their-name.md`.
+   - See existing entries for format.
 
 6. **Open a pull request** to https://github.com/kindnessflywheel/kindnessflywheel-site with a short description of what's being contributed.
 
