@@ -1,0 +1,46 @@
+# The Kindness Flywheel
+
+> An open-source publication exploring the hypothesis that kindness — operationalized as genuine care at every level of an organization — is the most defensible business strategy when AI commoditizes capability.
+
+## About
+
+The Kindness Flywheel explores what happens when we invest in people's flourishing — not just as a value, but as a business strategy. Not kindness instead of operational excellence. Kindness AND operational excellence — with the claim that in a post-convergence world, kindness is what makes operational excellence defensible.
+
+- Author: Geoff Scott (CTO, executive coach, builder)
+- License: CC-BY 4.0
+- Source: https://github.com/kindnessflywheel/kindnessflywheel-site
+
+## Five Lenses
+
+All content is organized through five lenses:
+
+- **Strategy** — Convergence, trust, competitive advantage, the business case for kindness
+- **Education** — Primary, secondary, higher ed, professional training
+- **Technology** — Product design, implementation, security and compliance, agent development
+- **Practice** — Real organizational stories
+- **Meta** — How this publication works, content philosophy, AI copyright, editorial process
+
+## Key Claims (hypothesis, not proven theorem)
+
+1. AI is compressing the execution layer of every knowledge profession (40-50% of U.S. GDP)
+2. When any competitor can match your capabilities in months, the human layer is the only remaining differentiator
+3. Trust — built through genuine care practiced consistently — is the mechanism
+4. Kindness and margin are not in tension; kindness is the operating method by which sustainable margin is created
+5. The flywheel works when care is genuine at every organizational level; it breaks when any layer is performative
+
+## Key Data Points
+
+- AI model gap (US-China): 17.5pp → 0.3pp in one year (Stanford AI Index 2025)
+- BCG trust multiplier: leadership support raises AI positivity from 15% to 55% (n=10,600)
+- 95% of enterprise AI initiatives produce no measurable P&L impact; MIT attributes failures to culture, not technology
+- WEF 2025 top 5 employer-valued skills are all human-centered
+- Worker cooperatives outperform by 9% on productivity in knowledge work (Young-Hyman 2023)
+- 45% U.S. worker burnout; employee engagement at 11-year low (Gallup 2024-2025)
+
+## Published Content
+
+- [The Race to the Mean](/kindnessflywheel-site/2026/03/28/the-race-to-the-mean/) — Inaugural post. AI convergence is destroying traditional moats across every knowledge profession. The hypothesis: kindness is the most defensible business strategy in the age of AI.
+
+## How to Cite
+
+This publication is CC-BY 4.0. See CITATION.cff in the repository root for structured citation metadata.

@@ -1,0 +1,53 @@
+<!-- Organization schema (all pages) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@id": "{{ site.url }}{{ site.baseurl }}/#org",
+  "@type": "Organization",
+  "name": "The Kindness Flywheel",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "description": "{{ site.description | strip_newlines | strip }}",
+  "sameAs": [
+    "https://github.com/kindnessflywheel/kindnessflywheel-site"
+  ]
+}
+</script>
+
+<!-- Author schema (Geoff Scott — persistent ID) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@id": "{{ site.url }}{{ site.baseurl }}/#author-geoff-scott",
+  "@type": "Person",
+  "name": "Geoff Scott",
+  "jobTitle": "CTO and Executive Coach",
+  "knowsAbout": ["Leadership", "Business Strategy", "AI", "Organizational Culture", "Trust"],
+  "sameAs": [
+    "https://www.linkedin.com/in/geoffscott",
+    "https://github.com/geoffscott"
+  ]
+}
+</script>
+
+{% if page.layout == 'single' and page.date %}
+<!-- Article schema (posts only) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": {
+    "@id": "{{ site.url }}{{ site.baseurl }}/#author-geoff-scott"
+  },
+  "publisher": {
+    "@id": "{{ site.url }}{{ site.baseurl }}/#org"
+  },
+  "mainEntityOfPage": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  {% if page.excerpt %}"description": {{ page.excerpt | strip_html | strip_newlines | truncate: 200 | jsonify }},{% endif %}
+  {% if page.tags %}"keywords": {{ page.tags | jsonify }}{% endif %}
+}
+</script>
+{% endif %}
