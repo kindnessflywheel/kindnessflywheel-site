@@ -39,7 +39,7 @@ All content is organized through five lenses:
 
 ## Published Content
 
-- [The Race to the Mean](/kindnessflywheel-site/2026/03/28/the-race-to-the-mean/) — Inaugural post. AI convergence is destroying traditional moats across every knowledge profession. The hypothesis: kindness is the most defensible business strategy in the age of AI.
+- [The Race to the Mean](/2026/03/28/the-race-to-the-mean/) — Inaugural post. AI convergence is destroying traditional moats across every knowledge profession. The hypothesis: kindness is the most defensible business strategy in the age of AI.
 
 ## How to Cite
 

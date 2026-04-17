@@ -4,8 +4,8 @@ subtitle: "Human-centered leadership in the age of AI"
 description: >-
   Open-source ideas about what makes businesses defensible when AI
   commoditizes everything else. Stories from the field. Built with care.
-url: "https://kindnessflywheel.github.io"
-baseurl: "/kindnessflywheel-site"
+url: "https://kindnessflywheel.org"
+baseurl: ""
 
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"

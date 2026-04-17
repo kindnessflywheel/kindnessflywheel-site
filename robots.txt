@@ -30,4 +30,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://kindnessflywheel.github.io/kindnessflywheel-site/sitemap.xml
+Sitemap: https://kindnessflywheel.org/sitemap.xml
