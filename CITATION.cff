@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "The Kindness Flywheel"
+message: "If you cite content from this publication, please use this reference."
+type: article
+authors:
+  - family-names: Scott
+    given-names: Geoff
+    affiliation: "Growth Science"
+repository-code: "https://github.com/kindnessflywheel/kindnessflywheel-site"
+url: "https://kindnessflywheel.github.io/kindnessflywheel-site/"
+license: CC-BY-4.0
+date-released: "2026-03-28"
+keywords:
+  - kindness
+  - business strategy
+  - AI convergence
+  - trust
+  - organizational culture
+  - human-centered leadership
+abstract: >
+  An open-source publication exploring the hypothesis that kindness —
+  operationalized as genuine care at every level of an organization —
+  is the most defensible business strategy when AI commoditizes capability.

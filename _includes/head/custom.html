@@ -1,0 +1,53 @@
+<!-- Organization schema (all pages) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@id": "{{ site.url }}{{ site.baseurl }}/#org",
+  "@type": "Organization",
+  "name": "The Kindness Flywheel",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "description": "{{ site.description | strip_newlines | strip }}"
+}
+</script>
+
+{% if page.date %}
+{% assign author_name = page.author | default: page.authors[0] %}
+{% assign author = site.data.authors[author_name] %}
+{% if author %}
+<!-- Author schema (resolved from post frontmatter + authors.yml) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@id": "{{ site.url }}{{ site.baseurl }}/#author-{{ author_name | slugify }}",
+  "@type": "Person",
+  "name": {{ author.name | jsonify }},
+  {% if author.bio %}"description": {{ author.bio | jsonify }},{% endif %}
+  {% if author.location %}"address": { "@type": "PostalAddress", "addressLocality": {{ author.location | jsonify }} },{% endif %}
+  "sameAs": [
+    {% for link in author.links %}{% if link.url %}"{{ link.url }}"{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
+  ]
+}
+</script>
+
+<!-- Article schema (resolved per post) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": {
+    "@id": "{{ site.url }}{{ site.baseurl }}/#author-{{ author_name | slugify }}"
+  },
+  "publisher": {
+    "@id": "{{ site.url }}{{ site.baseurl }}/#org"
+  },
+  "mainEntityOfPage": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  {% if page.excerpt %}"description": {{ page.excerpt | strip_html | strip_newlines | truncate: 200 | jsonify }},{% endif %}
+  {% if page.tags %}"keywords": {{ page.tags | jsonify }}{% endif %}
+}
+</script>
+{% endif %}
+{% endif %}

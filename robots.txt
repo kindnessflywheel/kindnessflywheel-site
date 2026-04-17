@@ -1,0 +1,33 @@
+# Kindness Flywheel — AI Crawler Policy
+# Allow all major AI search and training crawlers for maximum citation visibility
+
+User-agent: *
+Allow: /
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google (standard + AI)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://kindnessflywheel.github.io/kindnessflywheel-site/sitemap.xml
