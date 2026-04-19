@@ -15,7 +15,7 @@ The Kindness Flywheel explores what happens when we invest in people's flourishi
 All content is organized through five lenses:
 
 - **Strategy** — Convergence, trust, competitive advantage, the business case for kindness
-- **Education** — Primary, secondary, higher ed, professional training
+- **People** — Education, professional development, culture, and behavior
 - **Technology** — Product design, implementation, security and compliance, agent development
 - **Practice** — Real organizational stories
 - **Meta** — How this publication works, content philosophy, AI copyright, editorial process

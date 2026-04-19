@@ -13,7 +13,7 @@ We want **lived experience**. Not theory, not thought leadership, not advice col
 Every post uses one or more of these lenses:
 
 - **#Strategy** — Convergence, trust, competitive advantage, the business case for kindness.
-- **#Education** — Primary, secondary, higher ed, professional training. How we prepare people for what's next.
+- **#People** — Education, professional development, culture, and behavior.
 - **#Technology** — Product design, implementation, security and compliance, agent development. The craft of building with care.
 - **#Practice** — Real organizational stories. What happened when we tried this.
 - **#Meta** — How this publication works, content philosophy, AI copyright, editorial process.

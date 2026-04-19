@@ -32,7 +32,7 @@ When the execution layer compresses, what's left is whether people trust you. Yo
 Stories and insights from people doing the real work, explored through five lenses:
 
 - **#Strategy** — Convergence, trust, competitive advantage, the business case for kindness.
-- **#Education** — Primary, secondary, higher ed, professional training. How we prepare people for what's next.
+- **#People** — Education, professional development, culture, and behavior.
 - **#Technology** — Product design, implementation, security and compliance, agent development. The craft of building with care.
 - **#Practice** — Real organizational stories. What happened when we tried this.
 - **#Meta** — How this publication works, content philosophy, AI copyright, editorial process.
