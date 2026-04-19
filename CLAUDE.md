@@ -16,7 +16,7 @@ Read `CONTRIBUTING.md` for full editorial guidelines, post format, and the five 
 
 2. **Help them choose lenses.** Every post uses one or more of these five:
    - `#Strategy` — Convergence, trust, competitive advantage, the business case
-   - `#Education` — Primary, secondary, higher ed, professional training
+   - `#People` — Education, professional development, culture, and behavior
    - `#Technology` — Product design, implementation, security and compliance, agent development
    - `#Practice` — Real organizational stories, what happened when we tried this
    - `#Meta` — How this publication works, content philosophy, editorial process

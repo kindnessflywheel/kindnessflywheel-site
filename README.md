@@ -9,7 +9,7 @@ Not theory. Lived experience. What's working, what's hard, what we're learning.
 ## The Five Lenses
 
 - **#Strategy** — Convergence, trust, competitive advantage, the business case for kindness.
-- **#Education** — Primary, secondary, higher ed, professional training. How we prepare people for what's next.
+- **#People** — Education, professional development, culture, and behavior.
 - **#Technology** — Product design, implementation, security and compliance, agent development.
 - **#Practice** — Real organizational stories. What happened when we tried this.
 - **#Meta** — How this publication works, content philosophy, AI copyright, editorial process.
