@@ -22,17 +22,15 @@ I needed to prep my P&L and balance sheet for my accountant. 2025 tax filings. R
 
 An hour. I spent over an hour with this thing. It couldn't hold context. It would lose track of where we were mid-conversation, circle back to questions I'd already answered, suggest things we'd already tried. Classic context window mismanagement — the kind of thing you'd catch in the first week of testing if you actually used your own product.
 
-Then I ran out of credits.
+Then I ran out of credits. And it tried to upsell me.
 
-And it tried to upsell me.
+But the AI assistant was just the last straw. This is a product I pay for that intentionally obstructs my ability to use it for what I'm paying for. Persistent advertisements for services I don't need that I can't dismiss — they just keep coming back. The same repetitive abuse of my attention, session after session. And this isn't the product's fault. Products don't make choices. People do.
 
-A beta product. That doesn't work. That just burned an hour of my time accomplishing nothing. And its response to that failure was: *would you like to pay us more money?*
-
-Those greedy bastards.
+Someone designed this. Someone decided that abusing their users' attention and energy to extract more money for things they don't need was a good idea. And that person was driven by leadership that encourages a myopic focus on monetary extraction as opposed to value creation. That's not a product decision. It's a culture.
 
 ## The thing I'd been building toward
 
-I've hated QuickBooks for a long time. Not just the product — the posture. The locked-in data. The creeping price increases. The fundamental misalignment between what I need (accurate books, minimal friction) and what they need (recurring revenue, upsells, lock-in).
+I've been frustrated with QuickBooks for a long time. Not just the product — the posture. The locked-in data. The creeping price increases. The fundamental misalignment between what I need (accurate books, minimal friction) and what they optimize for (recurring revenue, upsells, lock-in).
 
 So I'd been researching an alternative. Beancount — open source, plain-text, double-entry accounting. The kind of thing you can version-control. Human-readable. Five hundred years of accounting principles, implemented in a format that belongs to you.
 
