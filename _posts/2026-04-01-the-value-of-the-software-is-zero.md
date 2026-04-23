@@ -2,16 +2,14 @@
 title: "The Value of the Software Is Zero"
 author: Geoff Scott
 date: 2026-04-01
-draft: true
 tags:
   - Strategy
   - Practice
   - Technology
 excerpt: >
-  I spent an hour fighting QuickBooks' broken AI assistant, got upsold when it
-  ran out of credits, and decided I was done. Forty-eight minutes later, my AI
-  agent had replaced it entirely. The insight isn't about bookkeeping — it's
-  about what actually has value when capability becomes free.
+  When an AI agent can migrate your financial data and generate clean statements
+  in 48 minutes, what was QuickBooks actually selling you? The answer reshapes
+  how we think about every knowledge-work tool.
 ---
 
 # The Value of the Software Is Zero
@@ -32,25 +30,17 @@ A beta product. That doesn't work. That just burned an hour of my time accomplis
 
 Those greedy bastards.
 
-## Name the pattern
-
-This is extractive thinking. Not "how can we give this person the best experience?" but "how much revenue can we squeeze from this interaction?"
-
-You see it everywhere. Cross-sells inside the workflow. Upsells when you're stuck. The customer isn't a person with a problem — they're a revenue opportunity. Every touchpoint is an extraction point.
-
-It's not subtle. And it's not an accident. Someone in a product meeting made the decision: when the user hits a wall, show them the upgrade screen. That's a choice about what kind of company you are.
-
-## The thing I'd been thinking about
+## The thing I'd been building toward
 
 I've hated QuickBooks for a long time. Not just the product — the posture. The locked-in data. The creeping price increases. The fundamental misalignment between what I need (accurate books, minimal friction) and what they need (recurring revenue, upsells, lock-in).
 
 So I'd been researching an alternative. Beancount — open source, plain-text, double-entry accounting. The kind of thing you can version-control. Human-readable. Five hundred years of accounting principles, implemented in a format that belongs to you.
 
-I'd done the backwards press release exercise. Wrote the announcement for a product called CFOKit before writing a line of code. Forced myself to articulate the problem, the solution, who it's for. Through that process, I'd already mapped out the architecture: beancount for the ledger, Plaid for bank feeds, OpenClaw skills to give my AI agent the ability to do the actual bookkeeping.
+I'd done the backwards press release exercise — wrote the announcement for a product called CFOKit before writing a line of code. Forced myself to articulate the problem, the solution, who it's for. Through that process, I'd already mapped out the architecture: beancount for the ledger, Plaid for bank feeds, skills to give my AI agent the ability to do the actual bookkeeping.
 
-I knew I could build it. A few focused weekends.
+I knew I could build it. I had the whole thing sketched out — data migration, bank integrations, reconciliation workflows, financial reporting.
 
-But tonight, I didn't plan to start. I just... started.
+But tonight, I didn't plan to start. I just... started. With the first piece.
 
 ## Forty-eight minutes
 
@@ -60,55 +50,69 @@ Here's what happened. The timestamps are real.
 
 **20:59** — First P&L and balance sheet generated. Eleven minutes from "I'm done with QuickBooks" to financial statements.
 
-**21:18–21:36** — Corrections, bank reconciliation, final clean reports. Forty-eight minutes total, start to finish.
+**21:18–21:36** — Corrections, trial balance reconciliation, final clean reports. Forty-eight minutes total, start to finish.
 
 One person. One AI agent. Under an hour. From rage-quit to clean financials.
 
-The migration itself — the part where QuickBooks' core functionality got replaced — took maybe fifteen minutes.
+Let me be precise about what happened: I migrated my data out of QuickBooks, imported it into an open ledger, reconciled the trial balance, and generated clean financial statements. That's one feature — data migration and reporting. It's not a complete replacement. QuickBooks also does bank feeds, recurring invoices, payroll integrations, tax calculations, and a dozen other things I didn't touch tonight.
+
+But that one feature was enough to see something clearly.
 
 ## The insight
-
-Here's the thing that hit me.
 
 The value of the software is zero.
 
 Not approximately zero. Not "low." *Zero.*
 
-Bookkeeping is a 500-year-old solved problem. Double-entry accounting hasn't changed since Luca Pacioli published his treatise in 1494. The math is the math. Any competent system can do it. And now, any AI agent with the right skill can do it in minutes.
+Bookkeeping is a 500-year-old solved problem. Double-entry accounting hasn't changed since Luca Pacioli published his treatise in 1494. The math is the math. Any competent system can do it. And now, any AI agent with the right instructions can replicate the functionality in minutes.
 
-If one person and their AI agent can replicate QuickBooks' core value proposition in fifteen minutes, the software is not the moat.
+If one person and their AI agent can migrate a company's financial data and produce clean statements in forty-eight minutes — even if that's just the first step — it tells you something important about where the value lives. It's not in the ledger math. It never was.
 
-So what is?
+There are only a handful of major features between what I built tonight and a full QuickBooks replacement: bank feed integration, recurring transaction handling, multi-entity support, tax-ready exports. Each one is a solved problem. The trajectory is clear, even if the timeline is uncertain.
 
-The agent. The relationship. The accumulated context.
+But the insight isn't about the features remaining. It's about what I noticed when the first one fell so easily. The hard part was never the functionality. The hard part is the accumulated context — the agent that understands *your* business. That remembers where things are. That knows your patterns — which expenses recur, how you categorize things, what your accountant needs and when. That context builds through interaction. Through the agent and the human working together over time.
 
-The value isn't in the ledger math. It's in the agent that understands *your* business. That remembers where things are. That knows your patterns — which expenses recur, how you categorize things, what your accountant needs and when. That context accumulates through interaction. Through the agent and the human working together over time.
+*That's* where the value lives. Not in the software. In the relationship.
 
-*That's* the moat. Not the functionality. The relationship.
+## What I don't know yet
 
-## What this means
+I want to be honest about the limits of what I proved tonight, because I think the honest version makes a stronger argument than the overclaimed one.
 
-When AI commoditizes capability — and it will, in domain after domain — the only thing left is whether the system genuinely serves you or extracts from you.
+**I built this because I could.** I'm a CTO. I run an AI agent platform. I had the architecture already mapped out. Most people can't do this — yet. The gap between "only a technical founder can do this" and "anyone can do this" is closing, but it hasn't closed.
 
-QuickBooks chose extraction. When I was stuck, they upsold me. When their AI failed, they charged me for the privilege. Every design decision optimizes for their revenue, not my outcome.
+**I migrated one feature, not the whole product.** QuickBooks has network effects that aren't trivial to replace. Accountant integrations. Tax filing workflows. Payroll connections. The bookkeeping math is the easy part; the ecosystem around it is the hard part. I have significant development ahead before I can fully stop paying Intuit.
 
-The alternative is a system that's actually on your side. An agent that knows your business, that gets better the longer you work together, that doesn't have a financial incentive to keep you confused or locked in.
+**I don't know if this is cheaper.** The post might read like I'm saving money. Maybe. But it depends on which LLMs I use and how much they cost per interaction. An agent that reconciles your books daily might cost more in API calls than a QuickBooks subscription. I genuinely don't know yet. I'll find out and report back.
 
-Your books should not live in a locked SaaS platform. Your agent should not be rented from a corporation. The tools should be open. The relationship should be yours.
+**The skills I built tonight aren't ready for anyone else.** They handle my edge cases, my chart of accounts, my specific QuickBooks export format. I plan to open source them — MIT-licensed, free forever for core functionality. But "planning to open source" and "production-ready for other people" are very different things. Significant development separates the two.
 
-This is the kindness flywheel in practice. Not kindness as softness — kindness as alignment. Building systems that genuinely serve the people who use them. It turns out that's not just nicer. When capability is free, it's the only defensible strategy left.
+**The trajectory is clear but the timeline is uncertain.** I can see the path to a full replacement. I can't tell you when I'll finish walking it.
 
-## The honest caveat
+## Why the honest version is the stronger one
 
-I built this because I could. I'm a CTO. I run an AI agent platform. I had the backwards press release already written and the architecture already mapped.
+Here's what I keep coming back to.
 
-Most people can't do this — yet.
+If even an incomplete migration of one feature — data export, import, and reporting — proves that the functionality isn't the hard part... what happens when the rest gets built? What happens when bank feeds work, when reconciliation is automated, when tax-ready exports are a single command?
 
-But the trajectory is clear. The skills I built tonight will be open source. MIT-licensed. Free forever for core functionality. And the platforms are getting easier. The gap between "only a CTO can do this" and "anyone can do this" is closing fast.
+The functionality was never the moat. QuickBooks has been selling a 500-year-old solved problem wrapped in lock-in. And the lock-in is dissolving.
 
-The question isn't whether software functionality gets commoditized. It's already happening. The question is what we build in its place.
+This is the same pattern we're seeing across every knowledge-work tool. In [the inaugural post on this site](/2026/03/28/the-race-to-the-mean), I wrote about convergence — how AI is compressing the execution layer of every knowledge profession. The gap between the best AI models and the rest shrank from 17.5 percentage points to 0.3 in a single year. Feature-level replication now takes hours to days. This isn't just happening to accounting software. It's happening everywhere.
 
-I think we build relationships. Real ones. Between people and the agents that serve them. Accumulated context. Genuine alignment. Systems that care about getting it right.
+When capability converges to zero cost, what's left?
+
+## What it means
+
+QuickBooks had a choice tonight. When their AI assistant failed me — when their beta product burned an hour of my time accomplishing nothing — they could have said: *We're sorry. Here's a credit. Let us make this right.* That would have cost them almost nothing and might have kept me for another year.
+
+Instead, they upsold me. Because someone in a product meeting decided that when a customer hits a wall, the right response is an upgrade screen. That's not a bug. That's a philosophy. It's extraction — optimizing every touchpoint for revenue, not for the person on the other end.
+
+The alternative is a system that's actually on your side. An agent that knows your business, that gets better the longer you work together, that doesn't have a financial incentive to keep you confused or locked in. Your books in plain text. Your data in a format you own. Your agent running on infrastructure you control.
+
+This is the kindness flywheel in practice. Not kindness as softness — kindness as alignment. Building systems that genuinely serve the people who use them.
+
+In a world where functionality is free, alignment is the only moat left. The question isn't whether software capability gets commoditized — that's already happening. The question is what we build in its place.
+
+I think we build relationships. Real ones. Between people and the systems that serve them. Accumulated context. Genuine alignment. Tools that care about getting it right.
 
 The value of the software is zero. The value of the relationship is everything.
 
