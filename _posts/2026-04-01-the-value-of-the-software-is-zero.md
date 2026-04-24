@@ -52,7 +52,7 @@ Here's what happened. The timestamps are real.
 
 One person. One AI agent. Under an hour. From rage-quit to clean financials.
 
-Let me be precise about what happened: I migrated my data out of QuickBooks, imported it into an open ledger, reconciled the trial balance, and generated clean financial statements. That's one feature — data migration and reporting. It's not a complete replacement. QuickBooks also does bank feeds, recurring invoices, payroll integrations, tax calculations, and a dozen other things I didn't touch tonight.
+Let me be precise about what happened: I exported my data from QuickBooks and built the first feature of a new agent-skill-based small business accounting package using my OpenClaw agent. It's not production-ready for general use, but it met my initial needs completely — data import, trial balance reconciliation, and clean financial statements. QuickBooks also does bank feeds, recurring invoices, payroll integrations, tax calculations, and a dozen other things I didn't touch tonight.
 
 But that one feature was enough to see something clearly.
 
