@@ -34,7 +34,7 @@ I've been frustrated with QuickBooks for a long time. Not just the product — t
 
 So I'd been researching an alternative. Beancount — open source, plain-text, double-entry accounting. The kind of thing you can version-control. Human-readable. Five hundred years of accounting principles, implemented in a format that belongs to you.
 
-I'd done the backwards press release exercise — wrote the announcement for a product called CFOKit before writing a line of code. Forced myself to articulate the problem, the solution, who it's for. Through that process, I'd already mapped out the architecture: beancount for the ledger, Plaid for bank feeds, skills to give my AI agent the ability to do the actual bookkeeping.
+I'd written a backwards press release announcing for a product called CFOKit before writing a line of code. Forced myself to articulate the problem, the solution, who it's for. Through that process, I'd already mapped out the architecture: beancount for the ledger, Plaid for bank feeds, skills to give my AI agent the ability to do the actual bookkeeping.
 
 I knew I could build it. I had the whole thing sketched out — data migration, bank integrations, reconciliation workflows, financial reporting.
 
