@@ -52,7 +52,7 @@ Here's what happened. The timestamps are real.
 
 One person. One AI agent. Under an hour. From rage-quit to clean financials.
 
-Let me be precise about what happened: I exported my data from QuickBooks and built the first feature of a new Agent Skill-based small business accounting package using my OpenClaw agent. It's not production-ready for general use, but it met my initial needs completely — data import, trial balance reconciliation, and clean financial statements. QuickBooks also does bank feeds, recurring invoices, payroll integrations, tax calculations, and a dozen other things I didn't touch tonight.
+Let me be precise about what happened: I exported my data from QuickBooks and built the first feature of a new Agent Skill-based small business accounting package using my OpenClaw agent. It's not production-ready for general use, but it met my initial needs completely — data import, trial balance reconciliation, and clean financial statements. More importantly, it solved the problem that started all of this: I could see exactly where the discrepancy was and give my accountant what he needed to file my taxes. QuickBooks also does bank feeds, recurring invoices, payroll integrations, tax calculations, and a dozen other things I didn't touch tonight.
 
 But that one feature was enough to see something clearly.
 
