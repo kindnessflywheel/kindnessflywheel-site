@@ -30,13 +30,13 @@ These lenses reflect the founding perspective. They're not fixed. If your story 
 
 ### The easiest path (no Git experience needed)
 
-1. **Write your post.** Use whatever works for you — Word, Google Docs, plain text, Markdown, or generate it using your favorite AI.
-2. **Create a [GitHub account](https://github.com/signup)** if you don't have one.
-3. **Fork this repository** — click the "Fork" button at the top of [the repo page](https://github.com/kindnessflywheel/kindnessflywheel-site).
-4. **Open your fork in [Claude Code](https://claude.ai/code)** (desktop, mobile, or web) with a default environment.
-5. **Upload your document and ask Claude Code to submit it.** It will convert your content to Markdown, generate the Jekyll frontmatter (title, author, date, tags), and walk you through confirming the details are right. Then it will commit your post and open a pull request for editorial review.
+1. **Create a [GitHub account](https://github.com/signup)** if you don't have one.
+2. **Fork this repository** — click the "Fork" button at the top of [the repo page](https://github.com/kindnessflywheel/kindnessflywheel-site).
+3. **Open your fork in [Claude Code](https://claude.ai/code)** ([here's how](https://docs.anthropic.com/en/docs/claude-code/github)). Use a default environment — desktop, mobile, or web all work.
+4. **Write your post — or upload one you've already written.** You can author directly in Claude Code (it makes a great thinking partner and scribe), or just drop in a document you wrote however you wrote it — Word, Google Docs, plain text, whatever works.
+5. **Claude Code takes it from there.** It will read your post, give you feedback on content and clarity, then reformat it for publishing and ask you to confirm the generated metadata is correct. Once you approve, it handles the rest.
 
-Claude Code will not modify your words. If something in your post doesn't fit the editorial guidelines, it will explain specifically what and why — and you decide what to change.
+We review your submission, may suggest edits, and publish it when it's ready.
 
 **A few guidelines for your source document:**
 
