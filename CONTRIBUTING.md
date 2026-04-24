@@ -30,7 +30,7 @@ These lenses reflect the founding perspective. They're not fixed. If your story 
 
 ### The easiest path (no Git experience needed)
 
-1. **Write your post.** Use whatever tool you're comfortable with — Google Docs, Word, a text editor, pen and paper. The format doesn't matter yet.
+1. **Write your post.** Use whatever text editor you prefer, or generate it using your favorite AI. The format doesn't matter yet.
 2. **Create a [GitHub account](https://github.com/signup)** if you don't have one.
 3. **Fork this repository** — click the "Fork" button at the top of [the repo page](https://github.com/kindnessflywheel/kindnessflywheel-site).
 4. **Open your fork in [Claude Code](https://claude.ai/code)** (desktop, mobile, or web) with a default environment.
