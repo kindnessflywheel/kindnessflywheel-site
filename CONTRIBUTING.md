@@ -1,6 +1,6 @@
 # Contributing to the Kindness Flywheel
 
-This guide is for anyone contributing to the Kindness Flywheel — whether you're a writer, practitioner, leader, builder, AI coding agent, or [Agent Skill](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills). You don't need to be technical. You don't need to know Git.
+This guide is for anyone — writers, practitioners, leaders, builders. You don't need to be technical. You don't need to know Git.
 
 ## What We Publish
 
@@ -41,7 +41,7 @@ Claude Code will not modify your words. If something in your post doesn't fit th
 **A few guidelines for your source document:**
 
 - **Text is the foundation.** Posts are primarily text. Keep the layout simple — headings, paragraphs, lists, block quotes.
-- **Images are welcome** but keep them light. One or two images per post is ideal. Large or numerous images slow down the site for everyone.
+- **Images are welcome** but keep them light. One or two images per post is ideal. Place images in `assets/images/posts/` and reference them in your post with descriptive alt text. Large or numerous images slow down the site for everyone.
 - **Complex page layouts aren't supported.** This is a publication, not a design portfolio. The site renders all posts in a consistent, readable format.
 
 ### If you're comfortable with Git
