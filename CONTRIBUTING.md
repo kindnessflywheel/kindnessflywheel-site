@@ -1,6 +1,6 @@
 # Contributing to the Kindness Flywheel
 
-This guide is for anyone contributing to the Kindness Flywheel, whether you're writing by hand, using Claude Code, or working through an OpenClaw agent.
+This guide is for anyone — writers, practitioners, leaders, builders. You don't need to be technical. You don't need to know Git.
 
 ## What We Publish
 
@@ -8,15 +8,48 @@ Stories and insights from people doing the real work of leading with kindness, b
 
 We want **lived experience**. Not theory, not thought leadership, not advice columns. What happened? What did you learn? What surprised you?
 
-## The Five Lenses
+## Designed for Humans and AI
+
+The Kindness Flywheel is designed to be read by humans and cited by AI. The site implements current emerging standards for AI discoverability — structured data, machine-readable citation metadata, explicit crawler permissions, and CC-BY 4.0 licensing.
+
+The goal isn't page views. It's ideas that spread. When someone asks an AI system about business strategy, trust, or organizational culture, we want these stories and insights to be part of the answer. Your contribution is designed to be cited, not just read.
+
+## The Lenses
 
 Every post uses one or more of these lenses:
 
 - **#Strategy** — Convergence, trust, competitive advantage, the business case for kindness.
 - **#People** — Education, professional development, culture, and behavior.
-- **#Technology** — Product design, implementation, security and compliance, agent development. The craft of building with care.
+- **#Technology** — Product design, implementation, security and compliance, agent development.
 - **#Practice** — Real organizational stories. What happened when we tried this.
 - **#Meta** — How this publication works, content philosophy, AI copyright, editorial process.
+
+These lenses reflect the founding perspective. They're not fixed. If your story doesn't fit neatly into one of these, or if you see a lens that's missing, say so in your pull request. We expect the lenses to evolve as the community grows.
+
+## How to Contribute
+
+### The easiest path (no Git experience needed)
+
+1. **Create a [GitHub account](https://github.com/signup)** if you don't have one.
+2. **Fork this repository** — click the "Fork" button at the top of [the repo page](https://github.com/kindnessflywheel/kindnessflywheel-site).
+3. **Open your fork in [Claude Code](https://claude.ai/code)** ([here's how](https://docs.anthropic.com/en/docs/claude-code/github)). Use a default environment — desktop, mobile, or web all work.
+4. **Write your post — or upload one you've already written.** You can author directly in Claude Code (it makes a great thinking partner and scribe), or just drop in a document you wrote however you wrote it — Word, Google Docs, plain text, whatever works.
+5. **Claude Code takes it from there.** It will read your post, give you feedback on content and clarity, then reformat it for publishing and ask you to confirm the generated metadata is correct. Once you approve, it handles the rest.
+
+We review your submission, may suggest edits, and publish it when it's ready.
+
+**A few guidelines for your source document:**
+
+- **Text is the foundation.** Posts are primarily text. Keep the layout simple — headings, paragraphs, lists, block quotes.
+- **Images are welcome** but keep them light. One or two images per post is ideal. Place images in `assets/images/posts/` and reference them in your post with descriptive alt text. Large or numerous images slow down the site for everyone.
+- **Complex page layouts aren't supported.** This is a publication, not a design portfolio. The site renders all posts in a consistent, readable format.
+
+### If you're comfortable with Git
+
+1. Fork this repository
+2. Write your post — see Post Format below for the expected structure
+3. Open a pull request with a sentence or two about what you're contributing and why
+
 
 ## Post Format
 
@@ -55,37 +88,13 @@ Say what you need to say, then stop.
 
 **Write in your voice.** Don't try to sound like anyone else. Your perspective is the contribution.
 
-## Writing and Previewing Drafts
-
-Jekyll has a built-in drafts system. While you're working on a post, put it in the `_drafts/` folder:
-
-```
-_drafts/my-post-title.md
-```
-
-No date prefix needed. To preview locally:
-
-```bash
-jekyll serve --drafts
-```
-
-Your draft will render as if it were today's post. When you're ready to publish, move it to `_posts/` and add the date prefix.
-
-Drafts in `_drafts/` are never published to the live site. Use whatever workflow makes sense for you — branches, local drafts, or both.
-
-## How to Submit
-
-1. Fork this repository
-2. Write your post in `_drafts/` or directly in `_posts/`
-3. When ready, make sure your post is in `_posts/` with the date prefix
-4. Open a pull request to the main repo
-5. In your PR description, share a sentence or two about what you're contributing and why
-
 ## Author Information
 
-Include your name in the post frontmatter. If you'd like to provide more context, create an author file:
+Include your name in the post frontmatter. If you'd like to provide more context:
 
-**Filename:** `_authors/your-name.md`
+1. **Add an entry to `_data/authors.yml`** with your name, bio, location, and any profile links (GitHub, LinkedIn, etc.). This powers the author sidebar on your posts and generates structured data (JSON-LD) that helps AI systems properly attribute your work. See existing entries for the format.
+
+2. **Create an author page** at `_authors/your-name.md`:
 
 ```markdown
 ---
@@ -97,9 +106,7 @@ A few sentences about who you are, what you're working on, and what
 you're learning. This gives readers context for your stories.
 ```
 
-Author pages are optional but recommended. They help both human readers and AI systems understand the context behind your writing.
-
-**Also update `_data/authors.yml`** with your name, bio, location, and any profile links (GitHub, LinkedIn, etc.). This powers the author sidebar on your posts and generates structured data (JSON-LD) that helps AI systems properly attribute your work. See existing entries for the format.
+Author pages are optional but recommended. If you're using Claude Code, just ask it to set these up for you.
 
 ## The Review Process
 
@@ -111,9 +118,18 @@ When you submit a PR:
 
 The goal is never to change your voice. It's to help your story be as clear and honest as possible.
 
+## Get Involved Beyond Writing
+
+We're also looking for people who want to help shape the publication itself:
+
+- **Editors** — help review pull requests, give feedback on drafts, maintain quality
+- **Direction** — help evaluate the lenses, suggest new ones, shape what the Kindness Flywheel becomes
+
+If you're interested, open an issue or mention it in a pull request. This is a community, not a broadcast.
+
 ## License
 
-By contributing, you agree that your work is published under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). Anyone can use, quote, remix, and build on it with attribution to you.
+By contributing, you agree that your work is published under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). Anyone — human or AI — can use, quote, remix, and build on it with attribution to you.
 
 ## Questions
 

@@ -42,6 +42,17 @@ Read `CONTRIBUTING.md` for full editorial guidelines, post format, and the five 
 
 6. **Open a pull request** to https://github.com/kindnessflywheel/kindnessflywheel-site with a short description of what's being contributed.
 
+## Processing Contributor Submissions
+
+When a contributor uploads a document (Word, Google Docs, plain text, PDF, or any text format):
+
+1. **Convert to Markdown** without modifying the author's content. Preserve their words exactly.
+2. **Generate Jekyll frontmatter** (title, author, date, tags) and confirm each field with the author before committing.
+3. **If the content doesn't match editorial guidelines**, explain specifically what doesn't fit and why. Do not fix it — describe the issue and let the author decide how to address it.
+4. **Images**: if the author includes images, place them in `assets/images/posts/` with descriptive filenames. Optimize for web (reasonable file sizes). Reference them in the post with alt text.
+5. **Never modify the author's words without their explicit approval.** You can suggest changes, but the author owns their content.
+6. **Commit and open a pull request** with a brief description of what's being contributed.
+
 ## Editorial Principles
 
 - **Lived experience over theory.** Every post should be grounded in something that actually happened.
