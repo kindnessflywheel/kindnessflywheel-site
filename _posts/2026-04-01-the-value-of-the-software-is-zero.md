@@ -44,7 +44,7 @@ But tonight, I didn't plan to start. I just... started. With the first piece.
 
 Here's what happened. The timestamps are real.
 
-**20:48** — Exported my data from QuickBooks. Uploaded it to my agent. Asked it to build a converter and import everything into beancount.
+**20:48** — Exported my data from QuickBooks. Uploaded it to my agent. Asked it to create a double-entry accounting system based on beancount, starting with the first feature: import a QuickBooks data export zip file.
 
 **20:59** — First P&L and balance sheet generated. Eleven minutes from "I'm done with QuickBooks" to financial statements.
 
