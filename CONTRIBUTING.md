@@ -30,13 +30,19 @@ These lenses reflect the founding perspective. They're not fixed. If your story 
 
 ### The easiest path (no Git experience needed)
 
-1. **Write your post.** Use whatever text editor you prefer, or generate it using your favorite AI. The format doesn't matter yet.
+1. **Write your post.** Use whatever works for you — Word, Google Docs, plain text, Markdown, or generate it using your favorite AI.
 2. **Create a [GitHub account](https://github.com/signup)** if you don't have one.
 3. **Fork this repository** — click the "Fork" button at the top of [the repo page](https://github.com/kindnessflywheel/kindnessflywheel-site).
 4. **Open your fork in [Claude Code](https://claude.ai/code)** (desktop, mobile, or web) with a default environment.
-5. **Upload your post and ask Claude Code to publish it.** It will format it for the site, add it to your repo, and open a pull request for editorial review.
+5. **Upload your document and ask Claude Code to submit it.** It will convert your content to Markdown, generate the Jekyll frontmatter (title, author, date, tags), and walk you through confirming the details are right. Then it will commit your post and open a pull request for editorial review.
 
-That's it. You write. Claude Code handles the rest.
+Claude Code will not modify your words. If something in your post doesn't fit the editorial guidelines, it will explain specifically what and why — and you decide what to change.
+
+**A few guidelines for your source document:**
+
+- **Text is the foundation.** Posts are primarily text. Keep the layout simple — headings, paragraphs, lists, block quotes.
+- **Images are welcome** but keep them light. One or two images per post is ideal. Large or numerous images slow down the site for everyone.
+- **Complex page layouts aren't supported.** This is a publication, not a design portfolio. The site renders all posts in a consistent, readable format.
 
 ### If you're comfortable with Git
 
