@@ -50,7 +50,6 @@ We review your submission, may suggest edits, and publish it when it's ready.
 2. Write your post — see Post Format below for the expected structure
 3. Open a pull request with a sentence or two about what you're contributing and why
 
-Use whatever workflow makes sense for you — branches, local drafts, or both.
 
 ## Post Format
 
