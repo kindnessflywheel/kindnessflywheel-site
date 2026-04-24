@@ -30,13 +30,13 @@ These lenses reflect the founding perspective. They're not fixed. If your story 
 
 ### The easiest path (no Git experience needed)
 
-1. **Create a [GitHub account](https://github.com/signup)** if you don't have one
-2. **Fork this repository** — click the "Fork" button at the top of [the repo page](https://github.com/kindnessflywheel/kindnessflywheel-site)
-3. **Open your fork in [Claude Code](https://claude.ai/code)** (desktop, mobile, or web) with a default environment
-4. **Write your post with Claude Code's help** — tell it what you want to write about and it will help you draft, format, and structure the post. Or upload a finished piece and ask it to format it for the site.
-5. **Have Claude Code push your post and open a pull request** — just ask it to do this and it will handle the Git mechanics for you
+1. **Write your post.** Use whatever tool you're comfortable with — Google Docs, Word, a text editor, pen and paper. The format doesn't matter yet.
+2. **Create a [GitHub account](https://github.com/signup)** if you don't have one.
+3. **Fork this repository** — click the "Fork" button at the top of [the repo page](https://github.com/kindnessflywheel/kindnessflywheel-site).
+4. **Open your fork in [Claude Code](https://claude.ai/code)** (desktop, mobile, or web) with a default environment.
+5. **Upload your post and ask Claude Code to publish it.** It will format it for the site, add it to your repo, and open a pull request for editorial review.
 
-That's it. Claude Code knows how to work with Jekyll sites and can handle the formatting, frontmatter, and pull request process.
+That's it. You write. Claude Code handles the rest.
 
 ### If you're comfortable with Git
 
