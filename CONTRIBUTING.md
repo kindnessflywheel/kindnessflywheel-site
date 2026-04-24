@@ -1,6 +1,6 @@
 # Contributing to the Kindness Flywheel
 
-This guide is for anyone — writers, practitioners, leaders, builders. You don't need to be technical. You don't need to know Git.
+This guide is for anyone contributing to the Kindness Flywheel — whether you're a writer, practitioner, leader, builder, AI coding agent, or [Agent Skill](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills). You don't need to be technical. You don't need to know Git.
 
 ## What We Publish
 
