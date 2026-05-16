@@ -35,6 +35,15 @@ plugins:
 # Reading
 words_per_minute: 200
 
+# Defer the theme bundle until Fraunces has loaded. Without this, MM's
+# greedy-nav measures menu-item widths in the Georgia fallback (narrower
+# than Fraunces), caches them, and then never recovers when the real font
+# swaps in — leaving menu items clipped on narrow viewports instead of
+# collapsing into the hamburger. The loader script below waits for
+# document.fonts.ready before injecting main.min.js.
+footer_scripts:
+  - /assets/js/load-main.js
+
 # Collections
 collections:
   authors:
