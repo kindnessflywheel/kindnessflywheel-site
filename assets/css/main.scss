@@ -48,90 +48,12 @@ $navicon-link-color-hover:   rgba(42, 34, 80, 0.06);
 
 // ─── Brand overrides (after MM, where we need to win on specificity) ───
 
-// Masthead lockup — give the brand mark room; shrink on mobile so nav fits.
+// Masthead lockup. Larger than MM's 2rem default — gives the brand mark
+// real presence on desktop and, at narrow viewports, leaves so little room
+// that MM's greedy-nav rolls every menu item into the hamburger.
 .site-logo img {
-  max-height: 4rem;
+  max-height: 4.5rem;
   width: auto;
-}
-@media (max-width: 640px) {
-  .site-logo img {
-    max-height: 2rem;
-    max-width: 10rem;
-  }
-}
-
-// ─── Responsive type scale ──────────────────────────────────────────────────
-// Desktop tokens stay unchanged. On small screens we step down heading sizes
-// so they don't dominate the viewport.
-@media (max-width: 640px) {
-  :root {
-    --kf-text-h1:      1.75rem;   // 2.5rem → 1.75rem
-    --kf-text-h2:      1.375rem;  // 2rem   → 1.375rem
-    --kf-text-h3:      1.25rem;   // 1.5rem → 1.25rem
-    --kf-text-display: 2.25rem;   // 3.5rem → 2.25rem
-    --kf-page-margin:  1.25rem;   // 3.375rem → 1.25rem
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  :root {
-    --kf-text-h1:      2rem;
-    --kf-text-display: 2.75rem;
-    --kf-page-margin:  2rem;
-  }
-}
-
-// ─── Masthead on mobile ─────────────────────────────────────────────────────
-// Minimal Mistakes' masthead uses a fixed-ish padding. Tighten it on phones
-// so the logo and hamburger don't crowd each other.
-@media (max-width: 640px) {
-  .masthead__inner-wrap {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  // Reduce the greedy-nav link gap so more items fit before collapsing.
-  .greedy-nav a {
-    padding: 0.5rem 0.375rem;
-  }
-}
-
-// ─── Post layout on mobile ──────────────────────────────────────────────────
-// The sidebar author block stacks below the content on narrow screens —
-// MM handles the column collapse, but the gutters need tightening.
-@media (max-width: 640px) {
-  .page__title {
-    font-size: var(--kf-text-h1);
-  }
-
-  .page__hero--overlay .page__title {
-    font-size: var(--kf-text-h2);
-  }
-
-  // Give the article body comfortable side room without wasting space.
-  .page__content {
-    font-size: 1rem;
-  }
-}
-
-// ─── Hero section on mobile ─────────────────────────────────────────────────
-@media (max-width: 640px) {
-  .page__hero--overlay {
-    min-height: 40vh;
-    padding: 2rem var(--kf-page-margin);
-
-    .page__lead {
-      font-size: var(--kf-text-body-lg);
-    }
-
-    // Stack buttons vertically so they don't truncate.
-    .page__cta {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      align-items: flex-start;
-    }
-  }
 }
 
 // Footer links — visible underline so the CC and credit links are

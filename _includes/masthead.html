@@ -8,6 +8,14 @@
           <a class="site-title" href="{{ '/' | relative_url }}">{{ site.masthead_title | default: site.title }}</a>
         {% else %}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+          {%- comment -%}
+          Empty .site-title placeholder. MM's greedy-nav.js measures
+          `$('.site-title').outerWidth(true)` unconditionally — when the
+          masthead has a logo and no site-title, jQuery returns undefined,
+          which poisons the math (NaN) and the hamburger collapse never
+          fires. A zero-width element makes outerWidth() return 0 instead.
+          {%- endcomment -%}
+          <span class="site-title" aria-hidden="true" style="display:none"></span>
         {% endif %}
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
