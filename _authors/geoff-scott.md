@@ -20,3 +20,7 @@ The Kindness Flywheel started as an idea that came to me, not one I invented. It
 I write from my experience across all of these contexts. The stories are real. The lessons are ongoing.
 
 I live in the Northern Catskills.
+
+---
+
+[GitHub](https://github.com/geoffscott){:target="_blank" rel="noopener noreferrer"} · [LinkedIn](https://linkedin.com/in/geoffscott){:target="_blank" rel="noopener noreferrer"} · [OneEleven](https://oneeleven.co){:target="_blank" rel="noopener noreferrer"} · [Growth Science](https://growthscience.co){:target="_blank" rel="noopener noreferrer"} · [Table](https://tabledialogue.com){:target="_blank" rel="noopener noreferrer"} · [Saranam](https://saranam.org){:target="_blank" rel="noopener noreferrer"} · [SIMNY](https://nysim.org){:target="_blank" rel="noopener noreferrer"}
