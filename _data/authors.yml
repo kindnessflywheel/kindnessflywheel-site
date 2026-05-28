@@ -1,8 +1,13 @@
 Geoff Scott:
   name: "Geoff Scott"
   home: "/authors/geoff-scott/"
-  bio: "CTO at OneEleven. Executive coach at Growth Science. Building with care."
-  location: "Hudson Valley, NY"
+  bio: |
+    Geoff Scott is CTO at [OneEleven Financial Wellness](https://oneeleven.co). He also runs [Growth Science](https://growthscience.co), an executive coaching practice, co-organizes [Table](https://tabledialogue.com), a community for entrepreneurs, and sits on the boards of [Saranam Center for Healing and Transformation](https://saranam.org) and [SIM New York Metro](https://simny.org).
+
+    He has built three startups and launched dozens of products for other companies. He has held leadership roles at three Inc. 500s and two Fortune 500s. Four of the companies he has worked with have exited, one through an IPO. He co-invented five issued US patents: four covering an AI digital therapeutic platform and one for a hardware device for medication adherence. He founded Hackerati, advising Viacom, The Huffington Post, Narrativ, and others, and held executive roles at DoubleClick, CBS, and The Princeton Review.
+
+    He created [Kindness Flywheel](https://kindnessflywheel.org), where he writes about leadership, technology, and what makes both work, and maintains several [open source AI projects](https://github.com/geoffscott). He lives in the Northern Catskills.
+  location: "Northern Catskills, NY"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -16,9 +21,12 @@ Geoff Scott:
     - label: "Growth Science"
       icon: "fas fa-fw fa-link"
       url: "https://growthscience.co"
+    - label: "Table"
+      icon: "fas fa-fw fa-link"
+      url: "https://tabledialogue.com"
     - label: "Saranam"
       icon: "fas fa-fw fa-link"
-      url: "https://saranamcenter.org"
+      url: "https://saranam.org"
     - label: "SIMNY"
       icon: "fas fa-fw fa-link"
-      url: "https://nysim.org"
+      url: "https://simny.org"
