@@ -2,7 +2,7 @@ Geoff Scott:
   name: "Geoff Scott"
   home: "/authors/geoff-scott/"
   bio: |
-    Geoff Scott is CTO at [OneEleven Financial Wellness](https://oneeleven.co). He also runs [Growth Science](https://growthscience.co), an executive coaching practice, co-organizes [Table](https://tabledialogue.com), a community for entrepreneurs, and sits on the boards of [Saranam Center for Healing and Transformation](https://saranam.org) and [SIM New York Metro](https://simny.org).
+    Geoff Scott is CTO at [OneEleven Financial Wellness](https://oneeleven.co). He also runs [Growth Science](https://growthscience.co), an executive coaching practice, co-organizes [Table](https://tabledialogue.com), a community for entrepreneurs, and sits on the boards of [Saranam Center for Healing and Transformation](https://saranam.org) and [SIM New York Metro](https://nysim.org).
 
     He has built three startups and launched dozens of products for other companies. He has held leadership roles at three Inc. 500s and two Fortune 500s. Four of the companies he has worked with have exited, one through an IPO. He co-invented five issued US patents: four covering an AI digital therapeutic platform and one for a hardware device for medication adherence. He founded Hackerati, advising Viacom, The Huffington Post, Narrativ, and others, and held executive roles at DoubleClick, CBS, and The Princeton Review.
 
@@ -29,4 +29,4 @@ Geoff Scott:
       url: "https://saranam.org"
     - label: "SIMNY"
       icon: "fas fa-fw fa-link"
-      url: "https://simny.org"
+      url: "https://nysim.org"
