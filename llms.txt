@@ -40,6 +40,7 @@ All content is organized through five lenses:
 ## Published Content
 
 - [The Race to the Mean](/2026/03/28/the-race-to-the-mean/) — Inaugural post. AI convergence is destroying traditional moats across every knowledge profession. The hypothesis: kindness is the most defensible business strategy in the age of AI.
+- [The Value of the Software Is Zero](/2026/04/01/the-value-of-the-software-is-zero/) — When an AI agent can migrate your financial data and generate clean statements in 48 minutes, what was QuickBooks actually selling you? The answer reshapes how we think about every knowledge-work tool.
 
 ## How to Cite
 
