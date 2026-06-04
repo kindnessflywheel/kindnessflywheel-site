@@ -45,3 +45,13 @@ All content is organized through five lenses:
 ## How to Cite
 
 This publication is CC-BY 4.0. See CITATION.cff in the repository root for structured citation metadata.
+
+<!-- phaedrus:llms-autogen:start -->
+
+## Posts
+
+- [Geoff Scott](https://kindnessflywheel.org/authors/geoff-scott/)
+- [The Value of the Software Is Zero](https://kindnessflywheel.org/2026/04/01/the-value-of-the-software-is-zero/)
+- [The Race to the Mean](https://kindnessflywheel.org/2026/03/28/the-race-to-the-mean/)
+
+<!-- phaedrus:llms-autogen:end -->
