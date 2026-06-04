@@ -1,0 +1,17 @@
+# Local development for the Kindness Flywheel site.
+# Builds and serves the Jekyll site in a container — no local Ruby toolchain needed.
+#   docker compose up        # serve at http://localhost:4000 (auto-rebuilds on change)
+#   docker compose down      # stop
+services:
+  site:
+    image: ruby:3.1
+    container_name: kf-jekyll
+    working_dir: /srv/site
+    volumes:
+      - .:/srv/site
+    ports:
+      - "4000:4000"
+    command: >
+      sh -c "bundle config set --local path vendor/bundle &&
+             bundle install --jobs 4 &&
+             bundle exec jekyll serve --host 0.0.0.0 --port 4000"
