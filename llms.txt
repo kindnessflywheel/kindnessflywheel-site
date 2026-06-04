@@ -37,6 +37,7 @@ Key data points:
 
 ## Posts
 
+- [Geoff Scott](https://kindnessflywheel.org/authors/geoff-scott/)
 - [The Value of the Software Is Zero](https://kindnessflywheel.org/2026/04/01/the-value-of-the-software-is-zero/): When an AI agent can migrate your financial data and generate clean statements in 48 minutes, what was QuickBooks actually selling you? The answer reshapes how we think about every knowledge-work tool.
 - [The Race to the Mean](https://kindnessflywheel.org/2026/03/28/the-race-to-the-mean/): AI is compressing the execution layer of every knowledge profession — and that's 40-50% of U.S. GDP. When any competitor can match your capabilities in months, what's left to compete on?
 
