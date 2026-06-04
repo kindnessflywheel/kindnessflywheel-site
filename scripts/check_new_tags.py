@@ -1,23 +1,26 @@
 #!/usr/bin/env python3
-"""phaedrus — detect newly-introduced tags in a PR.
+"""phaedrus — detect post tags not in the curated vocabulary.
 
-Compares the set of tags in `_posts/` on the PR head against the set on the
-base branch (BASE_REF). Writes a Markdown report to REPORT_FILE if any tags
-are net-new; emits an empty file otherwise.
+Compares the tags used by posts in `_posts/` on the PR head against the curated
+vocabulary in `_data/tags.yml` (TAGS_DATA) on the same head. Any post tag that
+isn't in the vocabulary is flagged. Writes a Markdown report to REPORT_FILE if
+there are any; emits an empty file otherwise.
+
+Adding the tag to `_data/tags.yml` in the same PR clears the flag — that's the
+intended, deliberate way to expand the vocabulary.
 
 Always exits 0 — the workflow uses report-emptiness to decide whether to
 comment. This is informational, not gating.
 
 Env:
-  BASE_REF       (default: origin/main) — git ref for the base branch.
   POSTS_DIR      (default: _posts)
+  TAGS_DATA      (default: _data/tags.yml)
   REPORT_FILE    (default: .phaedrus-new-tags.md)
 """
 from __future__ import annotations
 
 import os
 import re
-import subprocess
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -60,29 +63,23 @@ def head_tags(posts_dir: Path) -> dict[str, list[str]]:
     return out
 
 
-def base_tags(base_ref: str, posts_dir: str) -> set[str]:
-    out: set[str] = set()
+def known_tags(tags_data: Path) -> set[str]:
+    """The curated vocabulary from _data/tags.yml. Tolerates a `tags:` mapping of
+    `- name: X` objects, a `tags:` list of bare strings, or a bare top-level list."""
+    if not tags_data.exists():
+        return set()
     try:
-        listing = subprocess.check_output(
-            ["git", "ls-tree", "-r", "--name-only", base_ref, "--", f"{posts_dir}/"],
-            text=True,
-            stderr=subprocess.DEVNULL,
-        )
-    except (subprocess.CalledProcessError, FileNotFoundError):
-        return out
-    for path in listing.splitlines():
-        if not (path.endswith(".md") or path.endswith(".markdown")):
-            continue
-        try:
-            content = subprocess.check_output(
-                ["git", "show", f"{base_ref}:{path}"],
-                text=True,
-                stderr=subprocess.DEVNULL,
-            )
-        except subprocess.CalledProcessError:
-            continue
-        for t in parse_tags(content):
-            out.add(t)
+        data = yaml.safe_load(tags_data.read_text(encoding="utf-8")) or {}
+    except (OSError, yaml.YAMLError):
+        return set()
+    items = data.get("tags") if isinstance(data, dict) else data
+    if not isinstance(items, list):
+        return set()
+    out: set[str] = set()
+    for it in items:
+        value = it.get("name") if isinstance(it, dict) else it
+        if value is not None and str(value).strip():
+            out.add(str(value).strip())
     return out
 
 
@@ -90,18 +87,18 @@ def render(new: dict[str, list[str]]) -> str:
     if not new:
         return ""
     lines = [
-        "### 🏷️ New tags in this PR",
+        "### 🏷️ Tags not in the vocabulary",
         "",
-        "These tags don't appear on any post on the base branch — they expand the site's taxonomy. Worth a closer look:",
+        "These tags aren't in `_data/tags.yml` — they'd expand the curated vocabulary. Worth a closer look:",
         "",
     ]
     for tag in sorted(new):
         posts = sorted(set(new[tag]))
         joined = ", ".join(f"`{p}`" for p in posts)
-        lines.append(f"- **`{tag}`** — introduced by {joined}")
+        lines.append(f"- **`{tag}`** — used by {joined}")
     lines += [
         "",
-        "If a new tag is a typo or synonym of an existing one, consider editing the post to use the existing tag instead. If it's intentional, merge with care.",
+        "If a tag is a typo or synonym of an existing one, edit the post to use the vocabulary value instead. If it's a deliberate new tag, add it to `_data/tags.yml` in this PR.",
         "",
         "<sub>posted by [phaedrus](https://github.com/geoffscott/phaedrus) check-new-tags</sub>",
     ]
@@ -109,18 +106,17 @@ def render(new: dict[str, list[str]]) -> str:
 
 
 def main() -> int:
-    base = os.environ.get("BASE_REF") or "origin/main"
-    posts_dir_str = os.environ.get("POSTS_DIR", "_posts")
-    posts_dir = Path(posts_dir_str)
+    posts_dir = Path(os.environ.get("POSTS_DIR", "_posts"))
+    tags_data = Path(os.environ.get("TAGS_DATA", "_data/tags.yml"))
     report_path = Path(os.environ.get("REPORT_FILE", ".phaedrus-new-tags.md"))
 
     head = head_tags(posts_dir)
-    base_set = base_tags(base, posts_dir_str)
-    new = {t: ps for t, ps in head.items() if t not in base_set}
+    vocabulary = known_tags(tags_data)
+    new = {t: ps for t, ps in head.items() if t not in vocabulary}
 
     body = render(new)
     report_path.write_text(body, encoding="utf-8")
-    print(f"::notice::phaedrus check-new-tags: {len(new)} net-new tag(s)", file=sys.stderr)
+    print(f"::notice::phaedrus check-new-tags: {len(new)} tag(s) outside the vocabulary", file=sys.stderr)
     return 0
 
 

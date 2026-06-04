@@ -1,7 +1,7 @@
-# phaedrus — flag PRs that introduce new tags.
-# Non-blocking: this never fails the PR. It just posts a sticky comment when
-# the PR adds a tag that doesn't appear on any post on the base branch, so a
-# reviewer can decide whether it's a synonym/typo or a genuine taxonomy expansion.
+# phaedrus — flag PRs whose posts use tags outside the curated vocabulary.
+# Non-blocking: this never fails the PR. It just posts a sticky comment when a
+# post uses a tag that isn't in _data/tags.yml, so a reviewer can decide whether
+# it's a synonym/typo or a deliberate vocabulary expansion (add it to _data/tags.yml).
 name: phaedrus / check new tags
 
 on:
@@ -9,6 +9,7 @@ on:
     types: [opened, synchronize, reopened]
     paths:
       - '_posts/**'
+      - '_data/tags.yml'
       - 'scripts/check_new_tags.py'
       - '.github/workflows/check-new-tags.yml'
 
@@ -38,7 +39,6 @@ jobs:
       - name: Detect new tags
         id: detect
         env:
-          BASE_REF: origin/${{ github.event.pull_request.base.ref }}
           REPORT_FILE: .phaedrus-new-tags.md
         run: |
           python scripts/check_new_tags.py
