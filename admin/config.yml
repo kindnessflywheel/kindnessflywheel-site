@@ -13,8 +13,8 @@ backend:
 publish_mode: editorial_workflow
 media_folder: assets/images/posts
 public_folder: /assets/images/posts
-site_url: https://kindnessflywheel/kindnessflywheel-site
-display_url: https://kindnessflywheel/kindnessflywheel-site
+site_url: https://kindnessflywheel.org
+display_url: https://kindnessflywheel.org
 
 collections:
   - name: posts
@@ -28,9 +28,9 @@ collections:
       - { name: title,       label: Title,       widget: string }
       - { name: date,        label: Date,        widget: datetime }
       - { name: description, label: Description, widget: text, hint: 'One-line summary used by llms.txt and SEO.' }
-      - { name: authors,     label: Authors,     widget: list, field: { name: id, label: 'Author id', widget: string } }
-      - { name: Lenses, label: __TAXONOMY_LABEL__, widget: select, options: [ "Strategy", "People", "Technology", "Practice", "Meta" ] }
-      - { name: tags,        label: Tags,        widget: list, required: false }
+      - { name: authors,     label: Authors,     widget: list, hint: 'Author ids from _data/authors.yml or _authors/, comma-separated.' }
+      - { name: lens, label: Lenses, widget: select, options: [ "Strategy", "People", "Technology", "Practice", "Meta" ] }
+      - { name: tags,        label: Tags,        widget: list, required: false, hint: 'Free-form. New tags get extra scrutiny at PR review.' }
       - { name: body,        label: Body,        widget: markdown }
 
   - name: authors
