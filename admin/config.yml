@@ -25,13 +25,26 @@ collections:
     extension: md
     format: yaml-frontmatter
     fields:
-      - { name: title,       label: Title,       widget: string }
-      - { name: date,        label: Date,        widget: datetime }
-      - { name: description, label: Description, widget: text, hint: 'One-line summary used by llms.txt and SEO.' }
-      - { name: authors,     label: Authors,     widget: list, hint: 'Author ids from _data/authors.yml or _authors/, comma-separated.' }
-      - { name: lens, label: Lenses, widget: select, options: [ "Strategy", "People", "Technology", "Practice", "Meta" ] }
-      - { name: tags,        label: Tags,        widget: list, required: false, hint: 'Free-form. New tags get extra scrutiny at PR review.' }
-      - { name: body,        label: Body,        widget: markdown }
+# phaedrus canonical posts fields — universal Jekyll core + jekyll-seo-tag convention.
+# Injected at the __POSTS_FIELDS__ marker in admin/config.yml by install-site-assets.sh.
+# Per-site override: drop a complete replacement block at sites/<site>.posts-fields.yml.
+      - { name: title,   label: Title,   widget: string }
+      - { name: date,    label: Date,    widget: datetime }
+      - { name: author,  label: Author,  widget: string, hint: 'Author id (matches _data/authors.yml / _authors/).' }
+      - { name: excerpt, label: Excerpt, widget: text, hint: 'Teaser AND SEO meta description (seo-tag falls back description→excerpt→site.description).' }
+      - name: tags
+        label: Tags
+        widget: relation
+        collection: tag_vocabulary
+        file: tags
+        value_field: 'tags.*.name'
+        search_fields: ['tags.*.name']
+        display_fields: ['tags.*.name']
+        multiple: true
+        min: 1
+        required: true
+        hint: 'Pick from the curated vocabulary. Need a new tag? Add it to _data/tags.yml in this PR.'
+      - { name: body,    label: Body,    widget: markdown }
 
   - name: authors
     label: Authors
@@ -45,3 +58,21 @@ collections:
       - { name: bio,    label: Bio,    widget: text, required: false }
       - { name: url,    label: URL,    widget: string, required: false }
       - { name: avatar, label: Avatar, widget: image,  required: false }
+
+  # Curated tag vocabulary — the set offered to the posts "Tags" relation widget.
+  # Single source of truth for known tags; also read by the MCP server and the
+  # check-new-tags PR check. Add a new tag by editing _data/tags.yml in a PR.
+  - name: tag_vocabulary
+    label: Tag vocabulary
+    editor:
+      preview: false
+    files:
+      - name: tags
+        label: Tags
+        file: _data/tags.yml
+        fields:
+          - name: tags
+            label: Tags
+            widget: list
+            fields:
+              - { name: name, label: Name, widget: string }

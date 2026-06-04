@@ -111,10 +111,6 @@ def collect_posts(config: dict) -> list[dict]:
         if not d.exists():
             continue
         for path in sorted(d.glob("*.md")) + sorted(d.glob("*.markdown")):
-            # Posts are date-prefixed (YYYY-MM-DD-slug). Skip undated collection
-            # entries such as author bio pages — they aren't posts.
-            if not re.match(r"^\d{4}-\d{2}-\d{2}-", path.name):
-                continue
             try:
                 text = path.read_text(encoding="utf-8")
             except OSError:
@@ -124,9 +120,9 @@ def collect_posts(config: dict) -> list[dict]:
                 continue
             file_date, slug = slug_from_filename(path.name)
             title = fm.get("title") or slug.replace("-", " ").title()
-            # Use the post's excerpt as the link note, collapsing folded-scalar
-            # whitespace to a single line.
-            description = " ".join(str(fm.get("excerpt") or "").split())
+            # Mirror jekyll-seo-tag: prefer an explicit SEO `description` override,
+            # otherwise fall back to the post's `excerpt` (the canonical hook).
+            description = fm.get("description") or fm.get("excerpt") or ""
             link = permalink_for(config, fm, file_date, slug)
             posts.append({
                 "title": str(title),

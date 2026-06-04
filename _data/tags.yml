@@ -1,0 +1,9 @@
+# Curated tag vocabulary for this site (phaedrus).
+# Read by the Decap "Tags" relation widget, the MCP server, and check_new_tags.py.
+# Add a new tag here (in a PR) before using it on a post.
+tags:
+  - name: Meta
+  - name: People
+  - name: Practice
+  - name: Strategy
+  - name: Technology
