@@ -20,6 +20,16 @@ Fork the repo. Write your story. Open a pull request.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
+## Local development
+
+To preview the site locally you need [Docker](https://www.docker.com/) — no Ruby toolchain required:
+
+```
+docker compose up
+```
+
+This builds the site in a `ruby:3.1` container and serves it at <http://localhost:4000> with auto-regeneration on file changes. Gems install into `vendor/bundle`. Stop with `Ctrl-C`, or `docker compose down`.
+
 ## License
 
 All content is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it, quote it, build on it. Just credit the author.
