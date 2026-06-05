@@ -1,13 +1,14 @@
 ---
-title: "The Race to the Mean"
-author: Geoff Scott
+title: The Race to the Mean
 date: 2026-03-28
-tags:
-  - Strategy
+author: Geoff Scott
 excerpt: >
   AI is compressing the execution layer of every knowledge profession — and
-  that's 40-50% of U.S. GDP. When any competitor can match your capabilities
-  in months, what's left to compete on?
+  that's 40-50% of U.S. GDP. When any competitor can match your capabilities in
+  months, what's left to compete on?
+tags:
+  - Strategy
+  - Meta
 ---
 
 Something isn't adding up. Your team is shipping faster than ever. Your product is better than it's ever been. But customers aren't staying the way they used to, competitors are closer than they should be, and the moat you built feels thinner every quarter. If you're a founder, investors are hesitant to commit capital. The reason, even if nobody's saying it directly, is that they can see your moat has disappeared.
