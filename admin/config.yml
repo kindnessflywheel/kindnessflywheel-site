@@ -30,7 +30,15 @@ collections:
 # Per-site override: drop a complete replacement block at sites/<site>.posts-fields.yml.
       - { name: title,   label: Title,   widget: string }
       - { name: date,    label: Date,    widget: datetime }
-      - { name: author,  label: Author,  widget: string, hint: 'Author id (matches _data/authors.yml / _authors/).' }
+      - name: author
+        label: Author
+        widget: relation
+        collection: authors
+        value_field: title
+        search_fields: ['title']
+        display_fields: ['title']
+        required: true
+        hint: 'Pick an author. New authors: create them in the Authors collection first (and add a matching _data/authors.yml entry).'
       - { name: excerpt, label: Excerpt, widget: text, hint: 'Teaser AND SEO meta description (seo-tag falls back description→excerpt→site.description).' }
       - name: tags
         label: Tags
@@ -46,18 +54,26 @@ collections:
         hint: 'Pick from the curated vocabulary. Need a new tag? Add it to _data/tags.yml in this PR.'
       - { name: body,    label: Body,    widget: markdown }
 
+  # Author landing pages (_authors/<slug>.md). The post "Author" relation above
+  # selects from these by title. NOTE: a post's byline/SEO resolves the author
+  # name against _data/authors.yml (keyed by that title) — keep the two in sync.
   - name: authors
     label: Authors
     folder: _authors
     create: true
     extension: md
     format: yaml-frontmatter
-    identifier_field: name
+    identifier_field: title
     fields:
-      - { name: name,   label: Name,   widget: string }
-      - { name: bio,    label: Bio,    widget: text, required: false }
-      - { name: url,    label: URL,    widget: string, required: false }
-      - { name: avatar, label: Avatar, widget: image,  required: false }
+# phaedrus author-page fields — the _authors/<slug>.md landing pages.
+# `layout` + `author_profile` come from _config `defaults` for type: authors; pinned
+# here as hidden so CMS-created/edited entries keep them. `permalink` is derived by
+# the collection's permalink setting (/authors/:path/), so it isn't edited here.
+# Per-site override: drop a complete replacement block at sites/<site>.authors-fields.yml.
+      - { name: title,          label: Name,           widget: string }
+      - { name: layout,         label: Layout,         widget: hidden, default: single }
+      - { name: author_profile, label: Author profile, widget: hidden, default: true }
+      - { name: body,           label: Bio,            widget: markdown }
 
   # Curated tag vocabulary — the set offered to the posts "Tags" relation widget.
   # Single source of truth for known tags; also read by the MCP server and the
