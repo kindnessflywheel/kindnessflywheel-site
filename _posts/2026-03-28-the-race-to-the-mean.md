@@ -103,7 +103,7 @@ The question I keep coming back to: what does it actually look like to build an 
 
 I have pieces of that answer. I don't have the whole thing. That's why this is an open inquiry.
 
-If you have a piece — from your own organization, your research, your experience — write it up. We've built [multiple paths to contribute](https://github.com/kindnessflywheel/kindnessflywheel-site/blob/main/CONTRIBUTING.md){:target="_blank" rel="noopener noreferrer"}.
+If you have a piece — from your own organization, your research, your experience — write it up. We've built [multiple paths to contribute](/contribute/).
 
 ---
 

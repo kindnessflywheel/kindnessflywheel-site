@@ -1,4 +1,7 @@
-# Contributing to the Kindness Flywheel
+---
+title: "Contribute to the Kindness Flywheel"
+permalink: /contribute/
+---
 
 This guide is for anyone — writers, practitioners, leaders, builders. You don't need to be technical. You don't need to know Git.
 
@@ -28,29 +31,37 @@ These lenses reflect the founding perspective. They're not fixed. If your story 
 
 ## How to Contribute
 
-### The easiest path (no Git experience needed)
+Three ways in. Pick whichever fits how you like to work — they all end up in the same place: a pull request we read, maybe ask a question or two about, and publish. You don't need to know Git, and for one of them you don't even need a GitHub account.
 
-1. **Create a [GitHub account](https://github.com/signup)** if you don't have one.
-2. **Fork this repository** — click the "Fork" button at the top of [the repo page](https://github.com/kindnessflywheel/kindnessflywheel-site).
-3. **Open your fork in [Claude Code](https://claude.ai/code)** ([here's how](https://docs.anthropic.com/en/docs/claude-code/github)). Use a default environment — desktop, mobile, or web all work.
-4. **Write your post — or upload one you've already written.** You can author directly in Claude Code (it makes a great thinking partner and scribe), or just drop in a document you wrote however you wrote it — Word, Google Docs, plain text, whatever works.
-5. **Claude Code takes it from there.** It will read your post, give you feedback on content and clarity, then reformat it for publishing and ask you to confirm the generated metadata is correct. Once you approve, it handles the rest.
+### Write it in your browser
 
-We review your submission, may suggest edits, and publish it when it's ready.
+This is the simplest way, and there's nothing to install and no code to touch.
 
-**A few guidelines for your source document:**
+Go to [kindnessflywheel.org/admin](https://kindnessflywheel.org/admin/) and sign in with GitHub. (No account? [Making one](https://github.com/signup) takes a minute and costs nothing.) You'll land in a clean editor with a box for your title, a date, your name, a one-line summary, a few tags to choose from, and a wide-open space to write. No files to wrangle, no Markdown to learn, no formatting to get right. Got a photo or two? Drag them in.
 
-- **Text is the foundation.** Posts are primarily text. Keep the layout simple — headings, paragraphs, lists, block quotes.
-- **Images are welcome** but keep them light. One or two images per post is ideal. Place images in `assets/images/posts/` and reference them in your post with descriptive alt text. Large or numerous images slow down the site for everyone.
-- **Complex page layouts aren't supported.** This is a publication, not a design portfolio. The site renders all posts in a consistent, readable format.
+When you're done, save. That doesn't put it live — it sends it to us as a draft. We read it, and once it's ready, it's published.
 
-### If you're comfortable with Git
+### Talk it through with an AI assistant
 
-1. Fork this repository
-2. Write your post — see Post Format below for the expected structure
-3. Open a pull request with a sentence or two about what you're contributing and why
+If you'd rather think out loud than fill in a form, write your post in a conversation. This works with any AI assistant that speaks MCP; we'll use Claude as the example.
 
-### AI-Assisted Authoring Workflow
+Connect it once:
+
+1. In [claude.ai](https://claude.ai), open **Settings → Connectors**.
+2. Click **Add custom connector**.
+3. Paste this address: `https://mcp.kindnessflywheel.org/mcp`
+
+That's the whole setup — no password, no key. Now just talk. Tell it what happened, what you learned, what you're still working out. Draft together, shape it, and when you're happy with it, ask it to submit. It knows the format and the tags, and it opens the pull request for you. We take it from there.
+
+### Fork it and open a pull request
+
+If you're comfortable with Git, the usual flow works:
+
+1. Fork this repository.
+2. Add your post under `_posts/` — see [Post Format](#post-format) below for the shape.
+3. Open a pull request with a sentence or two about what you're sharing and why.
+
+#### Drafting with an AI agent over several sessions
 
 If you're using an AI agent — Claude Code, Claude Code Cloud, OpenClaw, or anything else — to help draft over multiple sessions, we recommend a convention that keeps your private context (voice profile, research, in-progress drafts) in your fork without leaking it into PRs to upstream.
 
@@ -117,6 +128,8 @@ and what you're still figuring out. Ground everything in real experience.
 There's no required length, but most posts land between 800 and 2000 words.
 Say what you need to say, then stop.
 ```
+
+**Keep it mostly text.** Posts are built to read cleanly on any screen, so headings, paragraphs, lists, and the occasional block quote are the whole toolkit — complex page layouts aren't supported. Images are welcome, but go light: one or two per post is plenty. Drop them in `assets/images/posts/`, give each one descriptive alt text, and keep the files a reasonable size so pages stay fast for everyone.
 
 ## What Makes a Strong Post
 
