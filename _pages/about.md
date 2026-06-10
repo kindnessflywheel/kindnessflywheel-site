@@ -43,7 +43,7 @@ This is a hypothesis, not a proven theorem. If research emerges that contradicts
 
 This is a community-driven publication. Free, unmonetized, and open to anyone with lived experience to share.
 
-[How to contribute](https://github.com/kindnessflywheel/kindnessflywheel-site/blob/main/CONTRIBUTING.md)
+[How to contribute](/contribute/)
 
 ## License
 

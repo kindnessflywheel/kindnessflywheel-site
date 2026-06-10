@@ -4,4 +4,4 @@ main:
   - title: "Posts by Lens"
     url: /tags/
   - title: "Contribute"
-    url: https://github.com/kindnessflywheel/kindnessflywheel-site/blob/main/CONTRIBUTING.md
+    url: /contribute/
