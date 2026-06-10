@@ -4,7 +4,7 @@ backend:
   name: github
   repo: kindnessflywheel/kindnessflywheel-site
   branch: main
-  base_url: https://kindnessflywheel-oauth-j5ezp3svyq-uc.a.run.app
+  base_url: https://auth.kindnessflywheel.org
   auth_endpoint: auth
   # Decap will land authoring as commits on a phaedrus PR branch for review.
   open_authoring: false
