@@ -6,7 +6,12 @@ backend:
   branch: main
   base_url: https://auth.kindnessflywheel.org
   auth_endpoint: auth
-  # Decap will land authoring as commits on a phaedrus PR branch for review.
+  api_root: https://auth.kindnessflywheel.org/github
+  # Decap lands authoring as commits on a phaedrus PR branch for review.
+  # When the bot backend is on (DECAP_BOT_BACKEND in sites/<site>.env), `api_root`
+  # above points at the phaedrus proxy, which performs writes as the phaedrus
+  # GitHub App — so contributors need no push access and no fork. open_authoring
+  # stays false either way (no fork-based flow). See docs/spec-b §0.
   open_authoring: false
   squash_merges: true
 
