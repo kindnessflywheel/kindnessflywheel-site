@@ -23,14 +23,6 @@
   --kf-subtle: #5A5670;
   --kf-rule: rgba(42, 34, 80, 0.4);
 
-  // Semantic aliases — use these in component CSS, not the raw tokens.
-  // Light theme defaults.
-  --kf-page-bg: var(--kf-ground-warm);
-  --kf-page-fg: var(--kf-ink);
-  --kf-page-fg-subtle: var(--kf-subtle);
-  --kf-link: var(--kf-ink);
-  --kf-link-hover: var(--kf-accent);
-
   // ─── typography ───────────────────────────────────────────────
   --kf-type-display: "Fraunces", Georgia, "Times New Roman", serif;
   --kf-type-body: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -72,26 +64,4 @@
   --kf-duration-fast: 120ms;
   --kf-duration-base: 200ms;
   --kf-ease: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-// ─── dark mode ──────────────────────────────────────────────────
-// Swap semantic aliases. Raw tokens stay constant.
-@media (prefers-color-scheme: dark) {
-  :root {
-    --kf-page-bg: var(--kf-ground-dark);
-    --kf-page-fg: var(--kf-ink-on-dark);
-    --kf-page-fg-subtle: #8A86A0;
-    --kf-link: var(--kf-ink-on-dark);
-    --kf-rule: rgba(248, 245, 240, 0.3);
-  }
-}
-
-// Manual override — `<html data-theme="dark">` forces dark mode
-// regardless of system preference. Useful for theme toggles.
-[data-theme="dark"] {
-  --kf-page-bg: var(--kf-ground-dark);
-  --kf-page-fg: var(--kf-ink-on-dark);
-  --kf-page-fg-subtle: #8A86A0;
-  --kf-link: var(--kf-ink-on-dark);
-  --kf-rule: rgba(248, 245, 240, 0.3);
 }

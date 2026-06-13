@@ -29,9 +29,9 @@ $background-color:           $kf-warm;
 $text-color:                 $kf-ink;
 $muted-text-color:           $kf-subtle;
 $primary-color:              $kf-ink;
-$border-color:               rgba(42, 34, 80, 0.18);
+$border-color:               rgba($kf-ink, 0.18);
 $footer-background-color:    mix($kf-ink, $kf-warm, 6%);
-$code-background-color:      rgba(42, 34, 80, 0.06);
+$code-background-color:      rgba($kf-ink, 0.06);
 
 $link-color:                 $kf-ink;
 $link-color-hover:           $kf-accent;
@@ -40,7 +40,7 @@ $link-color-active:          $kf-accent;
 
 $masthead-link-color:        $kf-ink;
 $masthead-link-color-hover:  $kf-accent;
-$navicon-link-color-hover:   rgba(42, 34, 80, 0.06);
+$navicon-link-color-hover:   rgba($kf-ink, 0.06);
 
 @import "design-tokens";
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
