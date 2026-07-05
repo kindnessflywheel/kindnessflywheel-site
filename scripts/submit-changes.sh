@@ -7,7 +7,9 @@
 #   - Copies all non-private, non-post files from drafts
 #   - ONE squashed commit
 #   - Force-pushes to the fork
-#   - Prints a compare URL for the contributor to open the PR
+#   - Opens the PR with a generated description (via gh), falling back to a
+#     compare URL only when the PR can't be created (e.g. a sandboxed
+#     environment like Claude Code Cloud, or gh isn't authenticated)
 #
 # Usage:
 #   scripts/submit-changes.sh <branch-slug> "<commit message>"
@@ -90,20 +92,14 @@ git commit -m "$COMMIT_MSG"
 
 git push -f origin "$BRANCH"
 
-COMPARE_URL="https://github.com/${UPSTREAM_REPO}/compare/main...${FORK_OWNER}:${BRANCH}?expand=1"
+PR_TITLE="$COMMIT_MSG"
+PR_BODY=$(
+  printf '%s\n\n**Files changed:**\n' "$COMMIT_MSG"
+  git diff --name-only origin/main.."$BRANCH" | sed 's/^/- `/; s/$/`/'
+)
 
 git checkout drafts
 
-cat <<EOF
-
-Branch pushed: $BRANCH
-One commit: "$COMMIT_MSG"
-
-Open the PR in your browser:
-
-  $COMPARE_URL
-
-You'll see one clean commit. Add a sentence or two of description, then click
-"Create pull request". If a PR for this branch already exists, the force-push
-already updated it; no further action needed.
-EOF
+# shellcheck source=scripts/lib/open-pr.sh
+. "$(dirname "$0")/lib/open-pr.sh"
+open_pr
