@@ -10,15 +10,16 @@ Help the contributor write and submit a post based on their real experience. You
 
 Read `CONTRIBUTING.md` for full editorial guidelines, post format, and the five lenses.
 
-## Publishing: Only One Way
+## Publishing: Only Through the Submit Scripts
 
-**The only mechanism for publishing anything in this repo is `scripts/submit-post.sh`.** That includes posts, author pages, site changes — everything.
+**Publishing always goes through one of the repo's two submit scripts — never by hand.** Pick the script by what you changed:
 
-- **Never** run `gh pr create` yourself.
-- **Never** call GitHub MCP tools like `mcp__github__create_pull_request`.
-- **Never** push directly to `main` or open a PR by hand in any other way.
+- **Posts and author pages** (`_posts/*`, `_authors/*`, `_data/authors.yml`) → `scripts/submit-post.sh <post-file>`
+- **Any other site change** — pages (`_pages/*`), `index.html`, layouts/includes, CSS, `_config.yml`, other `_data/*`, scripts → `scripts/submit-changes.sh <branch-slug> "<commit message>"`. **These are code changes, not posts.** Do not call them posts and do not route them through `submit-post.sh`.
 
-The script handles branch prep, the squashed commit, the exclusion of `.claude/authors/*/`, and prints a compare URL that the contributor clicks to open the PR. It calls `gh pr create` internally — that is the only place that call belongs. If you find yourself reaching for a PR-creation tool directly, stop: you are about to do the wrong thing.
+- **Don't open PRs by hand** — no `gh pr create`, no GitHub MCP tools like `mcp__github__create_pull_request`, no pushing directly to `main`. The submit scripts create the PR themselves.
+
+Both scripts run from the `drafts` branch, prepare a clean branch off `origin/main`, make ONE squashed commit, exclude `.claude/authors/*/` (and `submit-changes.sh` also excludes `_posts/*`), and force-push. They then **open the PR for you with a generated, editable description** (via `gh`). Only when PR creation can't complete — a sandboxed environment like Claude Code Cloud where the upstream API is unreachable, or `gh` isn't authenticated — do they fall back to printing a **compare URL** for the contributor to open in the browser. Let the script handle it either way.
 
 ## Workflow
 

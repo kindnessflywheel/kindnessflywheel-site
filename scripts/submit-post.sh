@@ -10,8 +10,8 @@
 #   - Copies in the post and any other non-private files from drafts
 #   - Makes ONE squashed commit so the upstream PR is clean
 #   - Force-pushes to the fork
-#   - Prints a compare URL the contributor clicks in their browser to open
-#     the PR upstream
+#   - Opens the PR with a generated description (via gh), falling back to a
+#     compare URL only when the PR can't be created (sandbox / no gh auth)
 #
 # Usage:
 #   scripts/submit-post.sh _posts/2026-05-14-my-post.md
@@ -128,20 +128,11 @@ git commit -m "post: $TITLE"
 
 git push -f origin "$BRANCH"
 
-COMPARE_URL="https://github.com/${UPSTREAM_REPO}/compare/main...${FORK_OWNER}:${BRANCH}?expand=1"
+PR_TITLE="$TITLE"
+PR_BODY=$(printf 'New post: **%s**\n' "$TITLE")
 
 git checkout drafts
 
-cat <<EOF
-
-Branch pushed: $BRANCH
-One commit: "post: $TITLE"
-
-Open the PR in your browser:
-
-  $COMPARE_URL
-
-You'll see one clean commit. Add a sentence or two of description, then click
-"Create pull request". If a PR for this branch already exists, the force-push
-already updated it; no further action needed.
-EOF
+# shellcheck source=scripts/lib/open-pr.sh
+. "$(dirname "$0")/lib/open-pr.sh"
+open_pr
