@@ -1,9 +1,9 @@
 ---
-title: "\"CFOKit: a Test of the Kindness Flywheel Hypothesis\""
+title: "CFOKit: a Test of the Kindness Flywheel Hypothesis"
 date: 2026-09-15
-author: "\"Geoff Scott\""
-excerpt: "\"You know why you started your company. Unless bookkeeping is your business, it's probably a necessary chore that you'd rather not do yourself. CFOKit is an open source agentic bookkeeper, designed for small businesses, that you can supervise from whichever AI chat platform you already use. Run it on your own machine, or eventually sign up for the hosted version. Development started four weeks ago, design decisions are documented, and feedback and other contributions are welcome.\""
-tags: "[Technology, Practice]"
+author: "Geoff Scott"
+excerpt: "You know why you started your company. Unless bookkeeping is your business, it's probably a necessary chore that you'd rather not do yourself. CFOKit is an open source agentic bookkeeper, designed for small businesses, that you can supervise from whichever AI chat platform you already use. Run it on your own machine, or eventually sign up for the hosted version. Development started four weeks ago, design decisions are documented, and feedback and other contributions are welcome."
+tags: [Technology, Practice]
 ---
 If you're like most entrepreneurs, you probably started your company for the freedom, earning potential, or sense of purpose. You need to manage your business finances, but unless you happen to be an accountant, bookkeeping probably isn't one of your favorite chores. There are two ways to get it done: hire a bookkeeper or do it yourself.
 
