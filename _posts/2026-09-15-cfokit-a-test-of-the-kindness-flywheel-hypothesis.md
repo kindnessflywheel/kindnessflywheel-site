@@ -1,15 +1,15 @@
 ---
-title: "CFOKit: a Test of the Kindness Flywheel Hypothesis"
+title: "\"CFOKit: a Test of the Kindness Flywheel Hypothesis\""
 date: 2026-09-15
-author: "Geoff Scott"
-excerpt: "You know why you started your company. Unless bookkeeping is your business, it's probably a necessary chore that you'd rather not do yourself. CFOKit is an open source agentic bookkeeper, designed for small businesses, that you can supervise from whichever AI chat platform you already use. Run it on your own machine, or eventually sign up for the hosted version. Development started four weeks ago, design decisions are documented, and feedback and other contributions are welcome."
-tags: [Technology, Practice]
+author: "\"Geoff Scott\""
+excerpt: "\"You know why you started your company. Unless bookkeeping is your business, it's probably a necessary chore that you'd rather not do yourself. CFOKit is an open source agentic bookkeeper, designed for small businesses, that you can supervise from whichever AI chat platform you already use. Run it on your own machine, or eventually sign up for the hosted version. Development started four weeks ago, design decisions are documented, and feedback and other contributions are welcome.\""
+tags: "[Technology, Practice]"
 ---
 If you're like most entrepreneurs, you probably started your company for the freedom, earning potential, or sense of purpose. You need to manage your business finances, but unless you happen to be an accountant, bookkeeping probably isn't one of your favorite chores. There are two ways to get it done: hire a bookkeeper or do it yourself.
 
-Hiring a bookkeeper or bookkeeping service can cost between $200 and $2,000 a month for a US small business, plus the cost of a suitable accounting system. If you operate in the US you are probably using QuickBooks. Estimates put its share of the small business accounting market at roughly 80%, with Sage and Xero each around 10%. Most CPAs are familiar with QuickBooks and recommend it, which is the main reason that it remains so dominant in the market.
+Bookkeeping services for a US small business start at roughly $200 to $400 a month, plus the cost of a suitable accounting system, and a full-time bookkeeper earns a median of about $4,200 a month before benefits. If you operate in the US you are probably using QuickBooks. Most CPAs are familiar with QuickBooks and recommend it, which is the main reason that it remains so dominant in the market.
 
-QuickBooks is certainly not dominant because it's loved by its end users. On the best days, I tolerate it. It's slow, difficult to navigate, and the price seems to go up every year. The relentless ads were the last straw for me. There is no setting that turns them off. Intuit's own support staff say so in their community forums, and dismissing one does not keep it dismissed. One user describes entering a dozen invoices and closing an ad on each one. You pay the subscription and the product abuses your attention, screen real estate, and time trying to sell you more Intuit services that it knows you don't need.
+QuickBooks is certainly not dominant because it's loved by its end users. On the best days, I tolerate it. It's slow, difficult to navigate, and the price seems to go up every year. The relentless ads were the last straw for me. There is no setting that turns them off. Intuit's own support staff say so in their community forums, and dismissing one does not keep it dismissed. One user describes entering payments invoice after invoice and closing an ad on each one. You pay the subscription and the product abuses your attention, screen real estate, and time trying to sell you more Intuit services that it knows you don't need.
 
 Bookkeeping should be done for you. QuickBooks no longer deserves its market position, and you deserve better.
 
@@ -60,3 +60,7 @@ If you've gotten this far, my hope is that you're interested enough to follow CF
 3. Implement features and fix bugs. Over the next few weeks I intend to finish what I need to replace QuickBooks myself: a bookkeeper skill that can create a new entity, import and reconcile my QuickBooks Online export, sync and post my account transactions, manage invoicing, and run basic reports. Pull requests are welcome for any of it. For anything larger than a bug fix, open an issue first so we can agree on the approach.
 
 Follow [CONTRIBUTING.md](https://github.com/cfokit/cfokit/blob/main/CONTRIBUTING.md){:target="_blank" rel="noopener"} to get started.
+
+---
+
+*Sources: [U.S. Bureau of Labor Statistics, Occupational Outlook Handbook](https://www.bls.gov/ooh/office-and-administrative-support/bookkeeping-accounting-and-auditing-clerks.htm){:target="_blank" rel="noopener"}, May 2025 wage data (bookkeeper median wage). [NerdWallet, "Best Online Bookkeeping Services"](https://www.nerdwallet.com/best/small-business/online-bookkeeping-services){:target="_blank" rel="noopener"}, July 2026 (bookkeeping service starting prices). [QuickBooks Community](https://quickbooks.intuit.com/learn-support/en-us/reports-and-accounting/how-can-i-turn-off-a-new-advertisement-that-is-interrupting-my/00/1451666){:target="_blank" rel="noopener"}, June 2024 (Intuit staff on turning off ads).*
