@@ -5,6 +5,8 @@ author: "Geoff Scott"
 excerpt: "You know why you started your company. Unless bookkeeping is your business, it's probably a necessary chore that you'd rather not do yourself. CFOKit is an open source agentic bookkeeper, designed for small businesses, that you can supervise from whichever AI chat platform you already use. Run it on your own machine, or eventually sign up for the hosted version. Development started four weeks ago, design decisions are documented, and feedback and other contributions are welcome."
 tags: [Technology, Practice]
 ---
+In April I wrote that [the value of the software is zero](https://kindnessflywheel.org/2026/04/01/the-value-of-the-software-is-zero/){:target="_blank" rel="noopener"}, and that what's left to compete on is the trust you earn by consistently meeting your customers' needs. CFOKit is my test of that hypothesis.
+
 If you're like most entrepreneurs, you probably started your company for the freedom, earning potential, or sense of purpose. You need to manage your business finances, but unless you happen to be an accountant, bookkeeping probably isn't one of your favorite chores. There are two ways to get it done: hire a bookkeeper or do it yourself.
 
 Bookkeeping services for a US small business start at roughly $200 to $400 a month, plus the cost of a suitable accounting system, and a full-time bookkeeper earns a median of about $4,200 a month before benefits. If you operate in the US you are probably using QuickBooks. Most CPAs are familiar with QuickBooks and recommend it, which is the main reason that it remains so dominant in the market.
