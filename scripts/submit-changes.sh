@@ -92,7 +92,8 @@ git commit -m "$COMMIT_MSG"
 
 git push -f origin "$BRANCH"
 
-PR_TITLE="$COMMIT_MSG"
+# Title is the subject line only; a multi-line message's body stays in PR_BODY.
+PR_TITLE="${COMMIT_MSG%%$'\n'*}"
 PR_BODY=$(
   printf '%s\n\n**Files changed:**\n' "$COMMIT_MSG"
   git diff --name-only origin/main.."$BRANCH" | sed 's/^/- `/; s/$/`/'
