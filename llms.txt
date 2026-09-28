@@ -1,3 +1,11 @@
+---
+# Rendered by Jekyll at build time: the Posts list comes from site.posts,
+# so it is always current. Edit the prose below by hand.
+layout: null
+permalink: /llms.txt
+sitemap: false
+search: false
+---
 # The Kindness Flywheel
 
 > An open-source publication exploring the hypothesis that kindness — operationalized as genuine care at every level of an organization — is the most defensible business strategy when AI commoditizes capability.
@@ -33,17 +41,14 @@ Key data points:
 - Worker cooperatives outperform by 9% on productivity in knowledge work (Young-Hyman 2023)
 - 45% U.S. worker burnout; employee engagement at 11-year low (Gallup 2024-2025)
 
-<!-- phaedrus:llms-autogen:start -->
-
 ## Posts
 
-- [Geoff Scott](https://kindnessflywheel.org/authors/geoff-scott/)
-- [The Value of the Software Is Zero](https://kindnessflywheel.org/2026/04/01/the-value-of-the-software-is-zero/): When an AI agent can migrate your financial data and generate clean statements in 48 minutes, what was QuickBooks actually selling you? The answer reshapes how we think about every knowledge-work tool.
-- [The Race to the Mean](https://kindnessflywheel.org/2026/03/28/the-race-to-the-mean/): AI is compressing the execution layer of every knowledge profession — and that's 40-50% of U.S. GDP. When any competitor can match your capabilities in months, what's left to compete on?
+{% for post in site.posts %}{% assign note = post.description | default: post.excerpt | strip_html | normalize_whitespace %}- [{{ post.title }}]({{ post.url | absolute_url }}){% if note != "" %}: {{ note }}{% endif %}
+{% endfor %}
+## Authors
 
-
-<!-- phaedrus:llms-autogen:end -->
-
+{% assign authors = site.authors | sort: "title" %}{% for author in authors %}{% assign profile = site.data.authors[author.title] %}{% assign note = profile.bio | default: author.description | strip_html | normalize_whitespace %}- [{{ author.title }}]({{ author.url | absolute_url }}){% if note != "" %}: {{ note }}{% endif %}
+{% endfor %}
 ## Optional
 
 - [Citation metadata](https://github.com/kindnessflywheel/kindnessflywheel-site/blob/main/CITATION.cff): structured citation metadata for this publication (CC-BY 4.0)
